@@ -7,20 +7,24 @@
       @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Roboto' sans-serif; }
-      h1, h2, h3 {
-        font-family: 'Roboto';
-        font-weight: normal;
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      h1, h2, h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+      }
+      .white { color: #FFFFFF;}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
     </style>
   </head>
   <body>
     <textarea id="source">
 
-class: center, middle
-background-image: url(https://ethereum.org/images/assets/1900/Ethereum-homestead-background-21.jpg)
-background-size: contain;
+class: center white
+background-image: url(https://i.redd.it/408ryru2vzty.jpg)
+background-position: bottom;
 
 # Ethereum Hack Night!
 ## `#DecentralizeEverything`
@@ -42,10 +46,82 @@ background-size: contain;
 ---
 
 # What is Ethereum?
-1. Ecosystem
-2. Smart Contracts
-3. Languages
-4. Tools
+1. It's a blockchain
+Specifically, a "Secure, Transactional-based State Machine"-on-a-Blockchain
+
+---
+
+# What is Ethereum?
+1. It's a blockchain
+2. It's a computer
+The Ethereum Virtual Machine (EVM) is a stack-based processor
+* Stack, 1024 stack limit
+* Memory, 256-bit registers
+* Storage, unlimited storage ($$$)
+* Pay-per-use of resources in "gas" (solves Halting Problem)
+
+---
+
+# What is Ethereum?
+1. It's a blockchain
+2. It's a computer
+3. It's a database
+A turing complete decentralized database engine
+* Lookups are fast, thanks to "Merkle Trees"
+"Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
+* Schema + Rules (Queries) are stored in "Smart Contracts"
+
+---
+
+# How does Ethereum work?
+* Everything is an address (20 byte public key checksum)
+* Two types of addresses:
+    * "External Accounts" Basically Users
+    * "Smart Contracts" Pieces of code
+* External Accounts store Ether and start transactions
+* Each node has 1 or more external accounts
+* Smart Contracts are compiled bytecode stored at a specific location
+* They interact with other addresses based on the rules
+
+---
+
+# Programming Languages
+
+```javascript
+/* Solidity (JavaScript-based syntax, current king) */
+contract DNS {
+    mapping (bytes32 => {address owner, uint128 ip}) domains
+    function register(bytes32 domainName) {
+        require(domains[domainName].owner == 0x0);
+        domains[domainName].owner = msg.sender;
+    }
+    function setIP(bytes32 domainName, uint128 ip) {
+        require(domains[domainName].owner == msg.sender);
+        domains[domainName].ip = ip;
+    }
+}
+```
+
+```python
+# Viper (python-based syntax, heavy development)
+domains: { owner: address, ip: num }[bytes32]
+
+def register(domain_name: bytes32):
+    assert not self.domains[domain_name].owner
+    self.domains[domain_name].owner = msg.sender
+
+def set_ip(domain_name: bytes32, ip: num):
+    assert self.domains[domain_name].owner == msg.sender
+    self.domains[domain_name].ip = ip
+```
+
+---
+
+# Tools
+* Nodes (Geth, PyEVM, Parity)
+* IDEs (Truffle, Populus, Remix)
+* Web3 (Web3.js, Web3.py)
+* Still Growing at an incredible rate
       
 ---
       

@@ -141,16 +141,16 @@ def set_ip(domain_name: bytes32, ip: num):
 
 # Tools
 * Clients 
-    * Geth
-    * Parity
-    * MetaMask
+    * [Geth](https://geth.ethereum.org/)
+    * [Parity](https://parity.io)
+    * [MetaMask](https://metamask.io/)
 * Web3
-    * Web3.js
-    * Web3.py
+    * [Web3.js](https://github.com/ethereum/web3.js/)
+    * [Web3.py](https://github.com/ethereum/web3.py)
 * IDEs
-    * Truffle
-    * Populus
-    * Remix
+    * [Truffle](http://truffleframework.com/)
+    * [Populus](https://github.com/ethereum/populus)
+    * [Remix](http://remix.ethereum.org/)
 
 ???
 

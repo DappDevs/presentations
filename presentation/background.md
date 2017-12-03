@@ -140,4 +140,3 @@ Tools are still growing and changing at an incredible rate!
     2. Restricted language expressiveness (90% common solution)
     3. Formal Verification "batteries included"i
 
-[](https://bitcoinmagazine.com/articles/ethereum-killer-ethereum-20-vitalik-buterins-roadmap/)

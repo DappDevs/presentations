@@ -51,7 +51,9 @@
 * Auction is secret
 * Rules will hold and refund tokens
 * [Source code](./contracts/SecretAuction.sol) (Parameters are [randomized](./contracts/deploy.py))
-* Everyone has equally good odds of winning auction (Don't send all your tokens at once!)
-* The auction will last 10 minutes, or until someone figures out the winning strategy
+* Everyone has equally good odds of winning auction
+    * Don't send all your tokens at once!
+* The auction will last 10 minutes
+    * or until someone figures out the winning strategy
 * The prize is really, really awesome...
 * **DO IT NOW!!!!!**

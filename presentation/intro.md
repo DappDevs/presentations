@@ -9,10 +9,10 @@ background-position: top;
 
 ---
 
-# Agenda
-1. Overview of Ethereum
-2. What are we Hacking?
-3. Setup a Node
-4. Hack a smart-wallet
-5. Participate in an ICO
-6. Win the auction for a prize!
+# Agenda (1 hour)
+1. Overview of Ethereum (15 mins)
+2. Hack Night Overview (10 mins)
+3. Hack! (20 mins)
+5. Participate in an ICO (5 mins)
+6. Win the auction for a prize! (10 mins)
+7. Q&A

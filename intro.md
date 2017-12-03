@@ -12,9 +12,7 @@ background-position: top;
 # Agenda
 1. Overview of Ethereum
 2. What are we Hacking?
-3. Setup a Node, Deploy a Contract
-4. Hack!
-5. Let's run an ICO!
-6. Auction a prize!
-7. Future of Ethereum
-8. Q&A
+3. Setup a Node
+4. Hack a smart-wallet
+5. Participate in an ICO
+6. Win the auction for a prize!

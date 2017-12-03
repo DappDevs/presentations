@@ -1,28 +1,57 @@
 
 # Let's Hack!
-Introduce my example (everyone is going to build/deploy a wallet
-and participate in an "ICO" on the testnet, then compete to win an auction with the tokens)
-I will have a reference wallet example people can use if they don't want to build their own
+* Initialize a client node
+* Get Ether from the faucet
+* Create, build, and deploy a "smart-wallet" smart contract
+* Participate in an "ICO" on the testnet
+* Use tokens to bid on an auction and win a prize!
 
 ---
-      
-# I Made a Smart Contract, Now What?
-Work through how to set up an Ethereum node, and deploy a contract
-      
+
+# Client node
+* Download MetaMask extension for Chrome (or the Brave browser)
+* Create a new encrypted DEN with your password
+* **NOTE**: All networks use the same address **DO NOT FORGET THIS**
+
 ---
 
-# Let's Do It!
-No seriously, go do it
-Let people hack for 20-30 minutes on wallet, help people out with questions
+# Give me ETH!
+* Visit [Rinkeby Faucet](https://faucet.rinkeby.io/)
+* Create a public social media post with your MetaMask address
+* Share the URL and ask for 18.75 Ethers
+
+---
+
+# `#hackhackhack`
+* [Reference Wallet](./contracts/Wallet.sol)
+* Not necessary, but encouraged
+    * You can participate in the ICO via your client directly
+* Write it in Solidity via [Remix](http://remix.ethereum.org/)
+* Bonus points: Write it in [Viper](https://viper.tools/) instead!
+
+---
+
+# I Made a This, Now What?
+* Deploy via Remix through MetaMask
+    * Specify "Injected Web3 Provider"
+* Deploy raw bytecode via Remix or Mist
 
 ---
 
 # What are these Tokens everyone is talking about?
-Run our "ICO" and deploy our auction contract
+* "Whitelist" (pre-register) with the [ICO contract](./contracts/ICO.sol)
+    * I will give you the Address
+* I will start the ICO once everyone has registered
+* Buy Tokens with your Rinkeby Eth
+    * ICO will last for 5 mins
 
 ---
 
-# FOMO: It's time to HODL!
-ICO and auction run for 10 mins, whomever has the winning bid of the auction contract
-gets mad props and maybe a t-shirt or something
-
+# Beware the FOMO!!!
+* Auction is secret
+* Rules will hold and refund tokens
+* [Source code](./contracts/SecretAuction.sol) (Parameters are [randomized](./contracts/deploy.py))
+* Everyone has equally good odds of winning auction (Don't send all your tokens at once!)
+* The auction will last 10 minutes, or until someone figures out the winning strategy
+* The prize is really, really awesome...
+* **DO IT NOW!!!!!**

@@ -4,7 +4,7 @@
 
 Specifically, a "Secure, Transaction-based State Machine"-on-a-Blockchain
 ![State Machine](https://cdn-images-1.medium.com/max/800/1*jZ-VRXBJtOnePofB0z2Q8A.png)
-This is a Blockchain:
+This is the transactions on a Blockchain:
 ![Blockchain](https://cdn-images-1.medium.com/max/800/1*l_H58_pGm3XGwGoQlO9FVQ.png)
 
 ---
@@ -13,11 +13,15 @@ This is a Blockchain:
 1. It's a blockchain
 2. It's a computer
 
-The Ethereum Virtual Machine (EVM) is a stack-based processor
-* Stack, 1024 stack limit
-* Memory, 256-bit registers
+The Ethereum Virtual Machine (EVM) processes each transaction:
+* No exceptions occured (reject transaction)
+* State Update
+
+EVM Specs:
+* Stack, 1024 stack limit (Stack overload exception)
+* Memory, 256-bit registers, unlimited registers ($$$$$)
 * Storage, unlimited storage ($$$)
-* Pay-per-use of resources in "gas" (solves Halting Problem)
+* Pay-per-use of resources in "gas" (mitigates Halting Problem)
 * [Ethereum Network Statistics](https://ethstats.net/)
 
 ---
@@ -27,30 +31,51 @@ The Ethereum Virtual Machine (EVM) is a stack-based processor
 2. It's a computer
 3. It's really a database
 
-A turing complete decentralized database engine
+A turing complete decentralized database
 * Lookups are fast, thanks to "Merkle Trees"
 
-"Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
-* Schema + Rules (Queries) are stored in "Smart Contracts"
+    "Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
+* Updates are atomic
+* Transaction "receipts" show data commits (include Logs)
+* Schema + Queries are stored in "Smart Contracts", along with data
+* Different data "endpoints" (Smart Contracts) can interact with other endpoints
 
 ---
 
 # How does Ethereum work?
 * Everything is an address (20 byte public key checksum)
 * Two types of addresses:
-    * "External Accounts" Basically Users
-    * "Smart Contracts" Pieces of code
-* External Accounts store Ether and start transactions
-* Each node has 1 or more external accounts
+    * "External Accounts"
+    * "Smart Contracts" - Schema + Rules + Datastore
+
+---
+
+# External Accounts
+* Private key corresponding to that address (Public Key)
+* External Accounts can store Ether and originate (sign) transactions
+* There is no code associated with an External Account
+* Could be:
+    * Software-managed Wallet (e.g. MetaMask, Mist, etc.)
+    * Hardware-managed Wallet (e.g. Ledger, Trezor, etc.)
+    * Paper Wallet (don't do this except for cold storage)
+
+---
+
+# Smart Contracts
 * Smart Contracts are compiled bytecode stored at a specific location
-* They interact with other addresses based on the rules
+* They interact with themselves and other addresses based on the rules
+* They have data in the datastore (state) associated with their address
+* They have a spec for their datastore, so EVM knows how to interact with storage
+
+You write EVM Bytecode in a higher level language like Solidity or Viper
 
 ---
 
 # Programming Languages
 
+Solidity - JavaScript-based syntax, current king
+
 ```javascript
-/* Solidity (JavaScript-based syntax, current king) */
 contract DNS {
     mapping (bytes32 => {address owner, uint128 ip}) domains
     function register(bytes32 domainName) {
@@ -64,8 +89,9 @@ contract DNS {
 }
 ```
 
+Viper - python-based syntax, under heavy development
+
 ```python
-# Viper (python-based syntax, heavy development)
 domains: { owner: address, ip: num }[bytes32]
 
 def register(domain_name: bytes32):
@@ -77,13 +103,20 @@ def set_ip(domain_name: bytes32, ip: num):
     self.domains[domain_name].ip = ip
 ```
 
+Others...
+
 ---
 
 # Tools
-* Nodes (Geth, PyEVM, Parity)
-* IDEs (Truffle, Populus, Remix)
+* Clients (Geth, Parity, MetaMask)
+    * Interact with Ethereum
+    * Basically access State and Send Transactions
 * Web3 (Web3.js, Web3.py)
-* Still Growing at an incredible rate
+    * Libraries for interacting with Ethereum on the Web
+* IDEs (Truffle, Populus, Remix)
+    * Help write, test, and deploy Smart Contracts
+
+Tools are still growing and changing at an incredible rate!
       
 ---
 
@@ -105,4 +138,6 @@ def set_ip(domain_name: bytes32, ip: num):
 * Viper
     1. Easier, Python-like syntax
     2. Restricted language expressiveness (90% common solution)
-    3. Formal Verification "batteries included"
+    3. Formal Verification "batteries included"i
+
+[](https://bitcoinmagazine.com/articles/ethereum-killer-ethereum-20-vitalik-buterins-roadmap/)

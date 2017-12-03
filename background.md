@@ -88,4 +88,21 @@ def set_ip(domain_name: bytes32, ip: num):
 ---
 
 # Ethereum 2.0
-future timeline of Ethereum's development
+* Three big problems:
+    1. Scalability
+    2. Privacy
+    3. Smart Contract Security
+* Sharding
+    1. "Enable the multiverse"
+    2. "Shards" will be subscribable, e.g. you only get what you're interested in
+    3. Shards share consensus with the main blockchain, have to break all shards
+* Proof of Stake
+    1. Reduces e-waste and energy consumption
+    2. Enable small-time hodlers to participate as much as large instiutions
+* Zcash collaboration (zk-SNARKS)
+    1. "Zero knowledge proofs" - Private transactions
+    2. Basically "I know that you did this correctly"
+* Viper
+    1. Easier, Python-like syntax
+    2. Restricted language expressiveness (90% common solution)
+    3. Formal Verification "batteries included"

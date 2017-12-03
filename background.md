@@ -18,14 +18,7 @@ The Ethereum Virtual Machine (EVM) is a stack-based processor
 * Memory, 256-bit registers
 * Storage, unlimited storage ($$$)
 * Pay-per-use of resources in "gas" (solves Halting Problem)
-
----
-
-class: center
-# Ethereum Network Statistics
-<iframe src="https://ethstats.net/" 
-style="-webkit-transform:scale(1);-moz-transform-scale(1);
-		display: block; position: absolute; width: 100%; height: 100%; border: none;"></iframe>
+* [Ethereum Network Statistics](https://ethstats.net/)
 
 ---
 

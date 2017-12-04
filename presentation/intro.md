@@ -1,11 +1,13 @@
-class: center bottom white
+class: center white
 background-image: url(https://i.redd.it/408ryru2vzty.jpg)
 background-position: top;
 
-# Ethereum Hack Night!
-## `#DecentralizeEverything`
-      
-### Presented by Bryant Eisenbach
+### Ethereum Hack Night!
+<!-- Because alignment ugh -->
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+Presented by Bryant Eisenbach
 
 ---
 

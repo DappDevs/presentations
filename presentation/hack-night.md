@@ -6,6 +6,12 @@
 * Participate in an "ICO" on the testnet
 * Use tokens to bid on an auction and win a prize!
 
+???
+
+Enough talk, let's hack!
+
+Here's what we're going to do
+
 ---
 
 # Client node
@@ -22,7 +28,7 @@
 
 ---
 
-# `#hackhackhack`
+# Where do I put it?
 * [Reference Wallet](./contracts/Wallet.sol)
 * Not necessary, but encouraged
     * You can participate in the ICO via your client directly
@@ -31,14 +37,14 @@
 
 ---
 
-# I Made a This, Now What?
+# I Made This, Now What?
 * Deploy via Remix through MetaMask
     * Specify "Injected Web3 Provider"
 * Deploy raw bytecode via Remix or Mist
 
 ---
 
-# What are these Tokens everyone is talking about?
+# What are these ICOs everyone is talking about?
 * "Whitelist" (pre-register) with the [ICO contract](./contracts/ICO.sol)
     * I will give you the Address
 * I will start the ICO once everyone has registered

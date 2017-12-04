@@ -195,7 +195,7 @@ Speaking of programming languages, there are a few different options in the Eth 
 
 # Tools
 * Node Clients 
-    * [Geth](https://geth.ethereum.org/)
+    * [Geth](https://geth.ethereum.org/)/[Mist](https://github.com/ethereum/mist/releases)
     * [Parity](https://parity.io)
     * [MetaMask](https://metamask.io/)
 * Web3
@@ -213,8 +213,9 @@ Some of the tools in the Ethereum Ecosystem we use are
 # Nodes or Clients
 * Interact with Ethereum
 * Basically access State and Send Transactions
-* Can be Light (only verify state using Merkle Trees)
-* Or full (store and validate all state in blockchain)
+* Can be Full (validates all blocks and transactions in blockchain)
+* Or Light (only verify integrity and obtains state using Merkle Trees)
+* Or Thin (doesn't validate or verify anything, trusts 3rd party)
 
 # Web3
 * Interface to the web browser

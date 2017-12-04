@@ -1,15 +1,19 @@
 
 # What is Ethereum?
-1. It's a blockchain
+1. It's a blockchain (duh)
 
 ![State Machine](https://cdn-images-1.medium.com/max/800/1*jZ-VRXBJtOnePofB0z2Q8A.png)
 ![Blockchain](https://cdn-images-1.medium.com/max/800/1*l_H58_pGm3XGwGoQlO9FVQ.png)
 
 ???
 
+Yes, it is a blockchain
+
 Specifically, a "Secure, Transaction-based State Machine"-on-a-Blockchain
 
-Transactions are stored in blocks, which are mined at regular intervals
+The transactions are stored in blocks, which are mined at regular intervals
+
+Due to the blockchain properties, any accepted transaction becomes immutable
 
 ---
 
@@ -17,28 +21,30 @@ Transactions are stored in blocks, which are mined at regular intervals
 1. It's a blockchain
 2. It's a computer
 
-The Ethereum Virtual Machine (EVM) processes each transaction
+The World's Largest and Most Expensive Computing Device
 
-EVM Specs:
+Ethereum Virtual Machine (EVM) Specs:
 * Stack, 1024 stack limit
-* Memory, 256-bit registers
-* Storage, Merkle Tree
+* Memory, 256-bit registers, max governed by gas limit
+* Storage, unlimited ($$$), stored per Contract in a Merkle Tree
 
 ![EVM](https://cdn-images-1.medium.com/max/800/1*UNCaS12SsPln7DEnRvcONQ.png)
 
 ???
 
+Ethereum is also a computer. A really big one, that's also really simple
+
 # EVM
+* Processes every transaction before inclusion into the Ethereum Blockchain
 * EVM execution runs concurrently on all nodes
-* EVM validates and computes state change for a given transaction
-    * Happens before inclusion into block
-    * All nodes validate blocks by checking that the transactions occured correctly
+* EVM validates and computes state change for each transaction
+    * Transactions that cause exceptions are rejected
 
 # Specs
-* Stack limit exceedance is an error, reverts and cancels transaction
-* Unlimited registers and storage
-    * Very expensive to use memory and modify storage
 * Pay-per-use of resources in "gas" (mitigates Halting Problem)
+* Gas Limit practically limits the amount of computation that can occur
+* Nearly unlimited storage
+* Very expensive to use resources and modify storage
 
 ---
 
@@ -47,7 +53,7 @@ EVM Specs:
 2. It's a computer
 3. It's really a database
 
-A turing complete decentralized database
+A turing-complete database for the Decentralized Web!
 
 <img src="https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png" width="80%">
 
@@ -56,11 +62,14 @@ A turing complete decentralized database
 
 ???
 
+In my opinion, the best way to think of Ethereum is as a really interesting database
+
+* Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution
+* Data storage is "durable" thanks to the blockchain
 * Lookups are fast, thanks to "Merkle Trees"
-* Updates are atomic
-* Transaction "receipts" show data commits (include Logs)
-* Schema + Rules (Queries) are stored in "Smart Contracts", along with data
-* Different data "endpoints" (Smart Contracts) can interact with other endpoints
+* Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
+* Arbitrary Schema + Rules (Queries) are stored in "Smart Contracts", along with contract datastore
+* Different data "endpoints" (Smart Contracts) can interact with other endpoints easily
 
 ---
 
@@ -74,8 +83,10 @@ A turing complete decentralized database
 
 ???
 
+Ethereum is implemented using two different types of accounts, or addresses
+
 # External Accounts
-* Private key corresponding to that address (Public Key)
+* Public/Private key pair corresponding to a particular address
 * External Accounts can store Ether and originate (sign) transactions
 * There is no code associated with an External Account
 * Could be:
@@ -90,6 +101,44 @@ A turing complete decentralized database
 * They have a spec for their datastore, so EVM knows how to interact with storage
 
 You write EVM Bytecode in a higher level language like Solidity or Viper
+ 
+---
+
+# Ethereum 2.0
+* Three big problems:
+    1. Scalability
+    2. Privacy
+    3. Smart Contract Security
+
+* Some solutions:
+    * Sharding - "The multiverse approach"
+    * Proof of Stake - "Consensus via Financial Incentives"
+    * Zcash collaboration - zk-SNARKS in Ethereum
+    * Viper Smart Contract Langauge
+
+???
+
+The future of Ethereum is very bright, but there are some problem areas
+
+# Sharding
+* "Enable the multiverse"
+* "Shards" will be subscribable, e.g. you only get what you're interested in
+* Shards share consensus with the main blockchain, have to break all shards
+
+# Proof of Stake
+* Reduces e-waste and energy consumption
+* Will enable small-time hodlers to participate as much as large instiutions can
+
+# Privacy e.g. Zcash collaboration
+* "Zero knowledge proofs" - Private transactions
+    * "I know that you did this correctly" without knowing what you did
+* Ring signatures
+    * I only know that someone in this group of addresses did this transaction
+* Privacy is important!
+    * Authoritarian Regimes and marginalized groups
+    * Private data (health records, financial statements)
+
+Viper is intended to conquer Smart Contract Security
 
 ---
 
@@ -125,14 +174,19 @@ def set_ip(domain_name: bytes32, ip: num):
 
 ???
 
+Speaking of programming languages, there are a few different options in the Eth ecosystem
+
 # Solidity
-* JavaScript-based syntax
-* Enables a wide range of features for dapps
-* current king
+* JavaScript-like syntax
+* Fully featured
+* Wide range of use cases for dapps
+* Current king
 
 # Viper
+* I contribute!
 * Easier, Python-like syntax
-* Restricted language expressiveness (90% common solution)
+* Designed to be secure (vs. fully featured)
+* Restricted language expressiveness (80% common use solutions)
 * Formal Verification "batteries included"
 
 # Others...
@@ -140,7 +194,7 @@ def set_ip(domain_name: bytes32, ip: num):
 ---
 
 # Tools
-* Clients 
+* Node Clients 
     * [Geth](https://geth.ethereum.org/)
     * [Parity](https://parity.io)
     * [MetaMask](https://metamask.io/)
@@ -154,52 +208,21 @@ def set_ip(domain_name: bytes32, ip: num):
 
 ???
 
-# Clients
+Some of the tools in the Ethereum Ecosystem we use are
+
+# Nodes or Clients
 * Interact with Ethereum
 * Basically access State and Send Transactions
+* Can be Light (only verify state using Merkle Trees)
+* Or full (store and validate all state in blockchain)
 
 # Web3
+* Interface to the web browser
 * Libraries for interacting with Ethereum on the Web
 
 # IDEs
 * Help write, test, and deploy Smart Contracts
+* Remix is for introductory use
 
 Tools are still growing and changing at an incredible rate!
-      
----
-
-# Ethereum 2.0
-* Three big problems:
-    1. Scalability
-    2. Privacy
-    3. Smart Contract Security
-
-* Some solutions:
-    * Sharding - "The multiverse approach"
-    * Proof of Stake - "Consensus via Financial Incentives"
-    * Zcash collaboration - zk-SNARKS in Ethereum
-    * Viper Smart Contract Langauge
-
-???
-# Sharding
-* "Enable the multiverse"
-* "Shards" will be subscribable, e.g. you only get what you're interested in
-* Shards share consensus with the main blockchain, have to break all shards
-
-# Proof of Stake
-* Reduces e-waste and energy consumption
-* Will enable small-time hodlers to participate as much as large instiutions can
-
-# Privacy e.g. Zcash collaboration
-* "Zero knowledge proofs" - Private transactions
-    * Basically "I know that you did this correctly" without knowing what you did
-* Ring signatures
-    * Basically I only know that someone in this group of addresses did this transaction
-    * Make groups larger, make it expontentially harder to figure out the origination
-* Privacy is important!
-    * Refugees
-    * Authoritarian Regimes
-    * Private data (health records, financial statements)
-
-Viper is intended to conquer Smart Contract Security
 

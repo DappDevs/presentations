@@ -55,11 +55,6 @@ Ethereum is also a computer. A really big one, that's also really simple
 
 A turing-complete database for the Decentralized Web!
 
-<img src="https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png" width="80%">
-
-"Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
-
-
 ???
 
 In my opinion, the best way to think of Ethereum is as a really interesting database
@@ -74,9 +69,10 @@ In my opinion, the best way to think of Ethereum is as a really interesting data
 ---
 
 # How does Ethereum work?
-* Everything is an address (20 byte public key checksum)
+1. Lots of Accounts
+* Everything is an account (or address)
 * Two types of addresses:
-    * "External Accounts"
+    * "External Accounts" - 20 bytes of public key hash
     * "Smart Contracts" - Schema + Rules + Datastore
 
 ![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
@@ -101,7 +97,53 @@ Ethereum is implemented using two different types of accounts, or addresses
 * They have a spec for their datastore, so EVM knows how to interact with storage
 
 You write EVM Bytecode in a higher level language like Solidity or Viper
- 
+
+---
+
+# How does Ethereum work?
+1. Lots of Accounts
+2. Cryptographic Primatives and Merkle Trees
+
+Also Powers Underlying Tech:
+* Cryptographically-secure hashing
+    * Collision Prevention
+    * Data Origination
+    * Data Obfuscation and Verification
+* Merkle Trees
+
+<img src="https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png" width="80%">
+
+"Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
+
+???
+Cryptography is at the heart of what Ethereum does, but it also enables some of th underlying tech:
+
+Because Ethereum is storing so much data, 
+and has to ensure the security and immutability of the data in a fast and efficient manner,
+there was a need for an algorithm that can store and prove the integrity of arbitrary key-pairs.
+
+Merkle trees
+
+---
+
+# How does Ethereum Work?
+1. Lots of Accounts
+2. Cryptographic Primatives and Merkle Trees
+3. Economics!
+
+We can now (re-)write the Digital Economy!
+* Token Economies - "Own your project"
+* Self-soverign Identity - "Own your identity"
+* Data Ownership - Well, you get the idea ("Own your data lol")
+* Business Crowdfunding - "ICOs!"
+* Fungible Rewards - "Wait, I can buy and sell skymiles?"
+* Supporting Open Source Software! - "Hell yes!"
+
+???
+
+For the first time in history, we can re-write the economic rules of large industries.
+Ethereum enables some facinating new economic rules for interacting with the digital economy.
+
 ---
 
 # Ethereum 2.0
@@ -183,11 +225,11 @@ Speaking of programming languages, there are a few different options in the Eth 
 * Current king
 
 # Viper
-* I contribute!
 * Easier, Python-like syntax
 * Designed to be secure (vs. fully featured)
 * Restricted language expressiveness (80% common use solutions)
 * Formal Verification "batteries included"
+* I contribute!
 
 # Others...
 
@@ -201,7 +243,7 @@ Speaking of programming languages, there are a few different options in the Eth 
 * Web3
     * [Web3.js](https://github.com/ethereum/web3.js/)
     * [Web3.py](https://github.com/ethereum/web3.py)
-* IDEs
+* IDEs and Deployment Management Platforms
     * [Truffle](http://truffleframework.com/)
     * [Populus](https://github.com/ethereum/populus)
     * [Remix](http://remix.ethereum.org/)
@@ -221,9 +263,9 @@ Some of the tools in the Ethereum Ecosystem we use are
 * Interface to the web browser
 * Libraries for interacting with Ethereum on the Web
 
-# IDEs
+# IDEs and Deployment Management Platforms
 * Help write, test, and deploy Smart Contracts
-* Remix is for introductory use
+* Remix is suggested for introductory use only
 
 Tools are still growing and changing at an incredible rate!
 

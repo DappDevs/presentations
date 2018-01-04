@@ -32,6 +32,9 @@ Ethereum Virtual Machine (EVM) Specs:
 
 ???
 
+TODO: we may need to clarify `gas` and `merkle tree` here
+also who is running the EVM? miners? how?
+
 Ethereum is also a computer. A really big one, that's also really simple
 
 # EVM
@@ -58,10 +61,11 @@ A turing-complete database for the Decentralized Web!
 ???
 
 In my opinion, the best way to think of Ethereum is as a really interesting database
+Properties of an ACID Database (MySQL, PostgreSQL, MSSQL, etc): Atomicity, Consistency, Isolation, Durability
 
 * Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution
 * Data storage is "durable" thanks to the blockchain
-* Lookups are fast, thanks to "Merkle Trees"
+* Lookups are fast, thanks to "Merkle Trees" (TODO: define this sooner?)
 * Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
 * Arbitrary Schema + Rules (Queries) are stored in "Smart Contracts", along with contract datastore
 * Different data "endpoints" (Smart Contracts) can interact with other endpoints easily
@@ -98,6 +102,8 @@ Ethereum is implemented using two different types of accounts, or addresses
 
 You write EVM Bytecode in a higher level language like Solidity or Viper
 
+TODO: tell a use case / user story. Example: flight insurance
+
 ---
 
 # How does Ethereum work?
@@ -118,11 +124,13 @@ Also Powers Underlying Tech:
 ???
 Cryptography is at the heart of what Ethereum does, but it also enables some of th underlying tech:
 
-Because Ethereum is storing so much data, 
+Because Ethereum is storing so much data,
 and has to ensure the security and immutability of the data in a fast and efficient manner,
 there was a need for an algorithm that can store and prove the integrity of arbitrary key-pairs.
 
 Merkle trees
+
+TODO: maybe move this slide up earlier
 
 ---
 
@@ -140,6 +148,13 @@ We can now (re-)write the Digital Economy!
 * Supporting Open Source Software! - "Hell yes!"
 
 ???
+
+TODO: I think we should re-organize the materials a little
+a rough idea to start a conversation
+1. What is a vanilla crypto currency
+2. History (why did the ETH project start)
+3. What makes ETH different
+4. How does one use the ETH network (user stories)
 
 For the first time in history, we can re-write the economic rules of large industries.
 Ethereum enables some facinating new economic rules for interacting with the digital economy.
@@ -236,7 +251,7 @@ Speaking of programming languages, there are a few different options in the Eth 
 ---
 
 # Tools
-* Node Clients 
+* Node Clients
     * [Geth](https://geth.ethereum.org/)/[Mist](https://github.com/ethereum/mist/releases)
     * [Parity](https://parity.io)
     * [MetaMask](https://metamask.io/)

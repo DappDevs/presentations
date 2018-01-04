@@ -18,3 +18,7 @@ Presented by Bryant Eisenbach
 5. Participate in an ICO (5 mins)
 6. Win the auction for a prize! (10 mins)
 7. Q&A
+
+???
+
+TODO: should we update the timings?

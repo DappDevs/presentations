@@ -15,7 +15,7 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
       }
-	  img { max-width: 100%; }
+      img { max-width: 100%; }
       .white { color: #FFFFFF;}
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
     </style>
@@ -25,13 +25,13 @@
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
-	// Place all of your files here
+      // Place all of your files here
       sourceUrls = [
-		'content/intro.md',
-    	'content/about-ethereum.md', 
-    	'content/references.md', 
-		'content/questions.md'
-      ]
+        'content/intro.md',
+        'content/about-ethereum.md',
+        'content/references.md',
+        'content/questions.md'
+      ];
 
       var xmlhttp = new XMLHttpRequest();
 
@@ -41,7 +41,7 @@
         xmlhttp.open('GET', sourceUrls[i], false);
         xmlhttp.send();
 
-		if (i > 0) source.innerHTML += "---\n"
+        if (i > 0) source.innerHTML += "---\n"
         source.innerHTML += "\n" + xmlhttp.responseText;
       };
       var slideshow = remark.create();

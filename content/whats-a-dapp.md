@@ -108,7 +108,7 @@ the year the world discovered that blockchains can do more than just move digita
 
 I also think that 2017 will be recorded as the year the majority of people realized that
 these large organizations, under the promise of *Free*, squandered our trust and inadvertantly
-paved way for the next wave of digital interactions.
+paved the way for the next wave of digital interactions.
 
 These are all the pieces needed to build a true Dapp.
 
@@ -123,10 +123,11 @@ These are all the pieces needed to build a true Dapp.
 
 So what is a Dapp *technically*? What are the pieces of the puzzle?
 
-User devices are the core of any application. They provide the clients that users interact with.
+User devices are the core of any application. They provide clients that users interact with.
 They can be a cell-phone, laptop, smartwatch, IoT Fridge, hardware wallet, whatever device that
 has a processor, enough memory to run the blockchain, and enough storage to fetch and run the dapp.
-Each device will store one or more cryptographic key pairs, giving it an *address* on the Ethereum network.
+Each device will store one or more cryptographic key pairs,
+giving it a unique *address* on the Ethereum network.
 
 Of course, blockchains are the major enabling technology.
 Not just for sending magic internet money anymore,
@@ -139,17 +140,19 @@ on centralized servers that are prone to hacks and data losses and endless user 
 The last enabling component is the standard, trusty Content Delivery Network.
 Ethereum's Swarm is the exactly the same as a regular CDN, but data storage occurs
 over many different file servers all incentivized using the Ethereum network to hold
-the data (encrypted or not) and trustfully deliver the files requested to a client device in parallel,
-in much the same way that torrenting works.
-Ethereum's Whisper is a similar technology that does the same for temporary message communication between devices and different dapps.
-This is what enables a Dapp be truly server-less!
+the data (encrypted or not) and trustfully deliver the files requested to a client device,
+using peer-to-peer file-sharing protocols like bittorrent.
+Whisper is a similar technology that provides temporary messaging between different devices and dapps.
+These services are what enables a Dapp be truly decentralized and server-less!
 
 Every component of the Dapp is open source, auditable, and designed to be secure against unauthorized tampering.
-The cryptographic keys use to access your user credentials or upload files to the Swarm CDN
+The cryptographic keys used to access your user credentials or upload files to the Swarm CDN
 are yours and yours alone, never having to leave your device.
-Your personal data can be stored encrypted in a similar way, never having to leave your device unless requested,
-ultimately used only for verification through secure channels, with only as much proof as needed to approve your request.
+Your personal data can be stored encrypted in a similar way,
+never having to leave your device unless requested,
+ultimately used only for verification through secure channels,
+with only as much proof as needed to grant your request.
 
-The hope is, that Web 3.0 and the Dapp architecture can substantially improve on the Internet as we know it today,
-and more faithfully acheive the original dream of the Internet:
+The hope is, that Web 3.0 and the Dapp architecture can substantially improve on the Internet
+as we know it today, and more faithfully acheive the original dream of the Internet:
 a way to help people all across the world connect and share information openly and freely.

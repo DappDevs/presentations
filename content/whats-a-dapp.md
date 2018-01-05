@@ -88,20 +88,24 @@ Isn't that amazing?
 
 *Also, we have CryptoKitties. What's not to love?*
 
+![CryptoKitties](https://www.cryptokitties.co/images/landing-kitty06.svg)
+
 ???
 
-However, the state of the internet is much different from back before Y2K.
+The state of the internet is much different from back before Y2K.
+
 We have amazing technologies built up over many years of
 hard work by tens of millions of technology professionals.
 We have smartphones more powerful than the supercomputers available 30 years ago.
-We have fast web browsers and technologies like Javascript and HTML,
-easy ways to store data for quick access.
-We have entire professions who are experts at creating amazing User Experiences,
+We have fast web browsers and pervasive technologies like Javascript and HTML.
+We have easy and cheap ways to store data for quick access.
+We have entire professions of people who are experts at creating amazing User Experiences,
 as well as digital artisians making beautiful front ends for all our favorite apps.
 
 We now have *blockchain technology*!
 2017 will probably go down as the *Year of the Blockchain*,
 the year the world discovered that blockchains can do more than just move digital coins around.
+
 I also think that 2017 will be recorded as the year the majority of people realized that
 these large organizations, under the promise of *Free*, squandered our trust and inadvertantly
 paved way for the next wave of digital interactions.

@@ -110,7 +110,7 @@ I also think that 2017 will be recorded as the year the majority of people reali
 these large organizations, under the promise of *Free*, squandered our trust and inadvertantly
 paved way for the next wave of digital interactions.
 
-This is what I think a *Dapp* is.
+These are all the pieces needed to build a true Dapp.
 
 ---
 

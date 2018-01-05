@@ -22,12 +22,12 @@ And if you have an interest in technology, you also know that most apps
 run based off of web servers that large organizations like Google, Facebook,
 and Amazon maintain. They use these servers to collect trillions of bytes
 of personal information, often without our consent or even knowledge,
-to help advertisers sell roducts, improve their machine learning algorithms,
-or about a 1,000 other uses that most of us couldn't even fathom.
+to help advertisers sell products, improve machine learning algorithms,
+or about a 1,000 other uses that most of us can't even fathom.
 
 To riff off of Frank Herbet "Those who control the DATA control the universe!"
 
-Decentralization, to me, means putting that control in the hands of the users.
+Decentralization, to me, means putting that control back in the hands of the users.
 
 ---
 
@@ -49,30 +49,29 @@ was inherantly a decentralizing technology.
 It was meant to help people all across the world connect
 and share information openly and freely.
 
-However, since it was invented up to now,
+However, since it was invented up until now,
 there are major hurdles the prevent the Internet from
 actualizing the dream of decentralization.
 
 Who here has set up a web server?
-Less than 0.2% of the population possesses the skills to do this complicated task,
+Less than 0.2% of the population possesses the skills necessary to do this complicated task,
 and very few of us that could would want to maintain a web server in order to use the Internet every day.
 So we delegated that task to bigger companies.
 
 Most of us here are developers.
 We all know what an exceedingly difficult task programming can be.
 Imagine having to use a command line every time you wanted to make a Facebook post or run a Google search.
-We delegated that task to organizations that care about providing these tools.
+We delegated the task of providing these tools to organizations that profit of their use.
 
-We trust the reputation of the companies that provide our services
-to provide code that does exactly what we want, whether it be posting a picture to
-our friend's wall or sending $30 for drinks to a friend's Venmo account.
+We trust the reputation of these companies to provide code that does exactly what we want,
+whether it be posting a picture to our friend's wall or sending $30 for drinks to a friend's Venmo account.
 There's absolutely no way we would want to do each and every one of those tasks manually.
 We're lazy, and we don't trust ourselves not to make mistakes.
 
 The real reason why Silicon Valley and the tech giants of the world won over the Internet is 
 by providing these services for us, making it slick, easy to use, and relatively bug-free.
-And to top it all off, they took this significant amount of work in providing us these desirable
-services, and they turned around and gave it to us for absolutely "Free"!
+And to top it all off, despite this significant amount of work in providing us these services, 
+they turned ir around and gave it to us for absolutely "Free"!
 
 Isn't that amazing?
 
@@ -108,6 +107,8 @@ these large organizations, under the promise of *Free*, squandered our trust and
 paved way for the next wave of digital interactions.
 
 This is what I think a *Dapp* is.
+
+---
 
 # What actually is a Dapp?
 

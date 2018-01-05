@@ -1,4 +1,4 @@
-# ethereum-hack-night
-Materials for Running the Ethereum Hack Night!
+# presentations
+Materials Presentations about DappDevs
 
 Check out the [Presentation](https://dappdevs.github.io/presentations/)

@@ -29,7 +29,7 @@ and one of the brightest minds in the space at the helm of it all.
 Even if Ethereum isn't ultimately the blockchain to rule all blockchains,
 the skills and knowledge needed to learn distributed application development
 will be transferrable to whatever succeeds it.
-The major differences between Ethereum and other smart contract platforms
+The major differences between Ethereum and competing smart contract platforms
 are simply the underlying tradeoffs use to secure the blockchain,
 and what programming language you use to write smart contracts.
 

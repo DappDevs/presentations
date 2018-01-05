@@ -1,13 +1,9 @@
-class: center white
+class: center white black-background
 background-image: url(https://i.redd.it/408ryru2vzty.jpg)
 background-position: top;
 
 ### Intro to Dapp Development with Ethereum
-<!-- Because alignment ugh -->
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-Presented by Bryant Eisenbach
+*Presented by Bryant Eisenbach*
 
 ---
 

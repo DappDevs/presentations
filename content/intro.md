@@ -2,7 +2,7 @@ class: center white
 background-image: url(https://i.redd.it/408ryru2vzty.jpg)
 background-position: top;
 
-### Intro to Ethereum and Dapp Development
+### Intro to Dapp Development with Ethereum
 <!-- Because alignment ugh -->
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>

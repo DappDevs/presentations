@@ -1,3 +1,12 @@
+# What is Ethereum?
+
+![Etherum Symbol](https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png)
+
+???
+
+{Segue into "What is Ethereum"}
+
+---
 
 # What is Ethereum?
 1. It's a blockchain (duh)

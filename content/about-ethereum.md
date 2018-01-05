@@ -1,5 +1,4 @@
 background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png)
-# What is Ethereum?
 
 ???
 
@@ -80,7 +79,7 @@ Properties of an ACID Database (MySQL, PostgreSQL, MSSQL, etc): Atomicity, Consi
 
 ---
 
-# How does Ethereum work?
+# How does Ethereum Work?
 1. Lots of Accounts
 * Everything is an account (or address)
 * Two types of addresses:
@@ -114,7 +113,7 @@ TODO: tell a use case / user story. Example: flight insurance
 
 ---
 
-# How does Ethereum work?
+# How does Ethereum Work?
 1. Lots of Accounts
 2. Cryptographic Primatives and Merkle Trees
 
@@ -206,6 +205,19 @@ The future of Ethereum is very bright, but there are some problem areas
 Viper is intended to conquer Smart Contract Security
 
 ---
+
+# The Ethereum Ecosystem
+
+* Clients
+* Programming Langauges
+* Tools
+
+???
+
+There are many different pieces of the Ethereum Ecosystem
+
+---
+
 
 # Programming Languages
 

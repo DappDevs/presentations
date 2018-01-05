@@ -112,10 +112,7 @@ This is what I think a *Dapp* is.
 
 # What actually is a Dapp?
 
-**Old Model (Web App):**
-![Server App](https://blog.ethereum.org/wp-content/uploads/2016/07/Screen-Shot-2016-07-08-at-5.27.25-PM.png)
-
-**New Model (Dapp):**
+**Parts of a Dapp:**
 ![Dapp](https://blog.ethereum.org/wp-content/uploads/2016/07/Screen-Shot-2016-07-08-at-5.37.32-PM.png)
 
 ???

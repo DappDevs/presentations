@@ -1,6 +1,5 @@
+background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png)
 # What is Ethereum?
-
-![Etherum Symbol](https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png)
 
 ???
 

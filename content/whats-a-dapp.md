@@ -1,3 +1,7 @@
+background-image: url(https://static01.nyt.com/images/2017/06/08/business/dealbook/faang-percent-change-1496858240065/faang-percent-change-1496858240065-facebookJumbo.png)
+background-size: contain;
+background-position: bottom;
+
 # What is a Dapp?
 
 *Decentralized Application*

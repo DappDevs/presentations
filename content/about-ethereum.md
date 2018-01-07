@@ -2,7 +2,10 @@ background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRA
 
 ???
 
-{Segue into "What is Ethereum"}
+So, what's the best stack to program Dapps on?
+
+We think Ethereum is the most exciting ecosystem to develop Dapps with,
+and we'll tell you why!
 
 ---
 
@@ -20,7 +23,8 @@ background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRA
 
 ???
 
-We focus specifically on Ethereum as we believe this project has the greatest chance of success in the long term.
+Our primary reason we believe Ethereum is the best framework to develop with
+is that it has the greatest chance of success in the long term.
 
 It has the most developer talent,
 the most active, interesting projects,
@@ -43,6 +47,8 @@ and what programming language you use to write smart contracts.
 
 Plus, *Ethereum* just sounds cool, right?
 
+So what is Ethereum?
+
 ---
 
 # What is Ethereum?
@@ -53,13 +59,27 @@ Plus, *Ethereum* just sounds cool, right?
 
 ???
 
-Yes, it is a blockchain
+Yes, it is a blockchain. (hilarity ensues)
 
-Specifically, a "Secure, Transaction-based State Machine"-on-a-Blockchain
+Ethereum stores transactions on an immutable ledger, basically like any other blockchain.
 
-The transactions are stored in blocks, which are mined at regular intervals
+What makes Ethereum special is that the transactions it stores in it's blocks aren't inherantly
+the transfer of a financial asset, although it can and often does involves a token or coin.
+The transactions involve execution of a string of pre-programmed computer logic statements,
+which can transfer valuable assets of any type or specification over a common framework.
 
-Due to the blockchain properties, any accepted transaction becomes immutable
+For those who haven't learned too much about blockchains, a brief decription:
+A blockchain stores a series of transactions into blocks,
+where each block is cryptographically linked through network consensus to the previous block,
+such that any modification of any "link" in the chain would can be detectable,
+preventing the acceptance of that modified chain through the rest of the network.
+
+Each of these transactions progresses the "state" of Ethereum, moving valuable assets
+between parties or executing smart contracts (immutable pieces of code stored on the blockchain)
+according to the rules of the network that all clients agree to by running the software.
+
+Because of the transactions being more than simple transfers of assets in a distributed ledger,
+you can think of Ethereum as not just another blockchain.
 
 ---
 
@@ -72,28 +92,53 @@ The World's Largest and Most Expensive Computing Device
 Ethereum Virtual Machine (EVM) Specs:
 * Stack, 1024 stack limit
 * Memory, 256-bit registers, max governed by gas limit
-* Storage, unlimited ($$$), stored per Contract in a Merkle Tree
+* Storage, unlimited ($$$), stored per Smart Contract
+* Block Gas Limit, currently approx 7 million gas
+* Gas price, fluctates based on usage (20 Gwei average)
+
+*Check out* [Eth Gas Station](ethgasstation.info) *for transaction pricing information*
 
 ![EVM](https://cdn-images-1.medium.com/max/800/1*UNCaS12SsPln7DEnRvcONQ.png)
 
 ???
 
-TODO: we may need to clarify `gas` and `merkle tree` here
-also who is running the EVM? miners? how?
+You could also think of Ethereum as a computer that is shared by the world.
 
-Ethereum is also a computer. A really big one, that's also really simple
+The code stored in Ethereum's blockchain in smart contracts is executable by the EVM,
+which is a simple, stack-based processor that validates proper execution of transactions
+which modify the "State" or data storage of the Ethereum network.
+The EVM is run on every node of the network, concurrently and in parallel, such that
+each transaction execution results in the exact same modification of the underlying state
+no matter what implementation of the node software is used.
+Running the transactions correctly is part of the consensus process of including new blocks
+to the blockchain, thus the EVM is the most important component of the node software.
 
-# EVM
-* Processes every transaction before inclusion into the Ethereum Blockchain
-* EVM execution runs concurrently on all nodes
-* EVM validates and computes state change for each transaction
-    * Transactions that cause exceptions are rejected
+Because each transaction is run concurrently on every node, there are potential attack
+vectors to the network that arise from any computing device.
+Any coding error such as infinite looping (the Halting problem), endless stack recursion,
+and other errors could be co-opting to deny service of the network to other transactions.
+In order to counteract this, the EVM introduces the concept of "Gas"
 
-# Specs
-* Pay-per-use of resources in "gas" (mitigates Halting Problem)
-* Gas Limit practically limits the amount of computation that can occur
-* Nearly unlimited storage
-* Very expensive to use resources and modify storage
+For every instruction executed on the EVM as part of a transaction, "Gas" is charged
+according the resources used by the instruction, whether it be computing cycles, memory storage,
+or storage to the smart contract's data store.
+Transactions fees are charged according to the gas usage of the transaction and the "Gas price"
+provided by the sender, and the miners recoup the resulting fees.
+`Fees = Gas Price x Gas Used`
+
+Every transaction must be executable for less than the gas limit, which is an upper bound
+chosen by consensus by the miners that secure the Ethereum network.
+Any transaction that exceeds this upper bound will be recorded as rejected by the network,
+and the corresponding fee will be recouped by the miner for mining the block including the failed transaction.
+
+"Gas" isn't just charged for instruction use, but also for memory and storage use.
+Ethereum could theorhetically store an unlimited amount of data "on-chain",
+but there is a practical limit as the storage costs are currently many orders of magnitude
+more than any competiting data storage platform.
+Due to these costs, it often only useful to store critical data "on-chain", including
+cryptographic hashes of off-chain data (such as evidence or legal documentation),
+which can be used to "prove" submitted documentation corresponds to these stored hashes
+at a later point in time.
 
 ---
 
@@ -106,83 +151,112 @@ A turing-complete database for the Decentralized Web!
 
 ???
 
-In my opinion, the best way to think of Ethereum is as a really interesting database
-Properties of an ACID Database (MySQL, PostgreSQL, MSSQL, etc): Atomicity, Consistency, Isolation, Durability
+In my opinion, the best way to think of Ethereum is a really interesting database backend for decentralized applications.
+Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance: Atomicity, Consistency, Isolation, Durability
 
-* Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution
-* Data storage is "durable" thanks to the blockchain
-* Lookups are fast, thanks to "Merkle Trees" (TODO: define this sooner?)
-* Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
-* Arbitrary Schema + Rules (Queries) are stored in "Smart Contracts", along with contract datastore
+* Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution of each transaction
+* Data storage is "durable" thanks to the blockchain's fault tolerant properties
+* Arbitrary Schema + Rules (Queries) are stored in "Smart Contracts", along with per-contract datastore
 * Different data "endpoints" (Smart Contracts) can interact with other endpoints easily
+* Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
+* Lookups are fast and secure, thanks to "Merkle Trees" (which you should totally look into)
 
 ---
 
-# How does Ethereum Work?
-1. Lots of Accounts
-* Everything is an account (or address)
-* Two types of addresses:
-    * "External Accounts" - 20 bytes of public key hash
-    * "Smart Contracts" - Schema + Rules + Datastore
-
-![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
+background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png)
 
 ???
 
-Ethereum is implemented using two different types of accounts, or addresses
-
-# External Accounts
-* Public/Private key pair corresponding to a particular address
-* External Accounts can store Ether and originate (sign) transactions
-* There is no code associated with an External Account
-* Could be:
-    * Software-managed Wallet (e.g. MetaMask, Mist, etc.)
-    * Hardware-managed Wallet (e.g. Ledger, Trezor, etc.)
-    * Paper Wallet (don't do this except for cold storage)
-
-# Smart Contracts
-* Smart Contracts are compiled bytecode stored at a specific location
-* They interact with themselves and other addresses based on the rules
-* They have data in the datastore (state) associated with their address
-* They have a spec for their datastore, so EVM knows how to interact with storage
-
-You write EVM Bytecode in a higher level language like Solidity or Viper
-
-TODO: tell a use case / user story. Example: flight insurance
+Awesome, we now know what Ethereum is, but how does it work?
+What do I need to know to code my Dapp in Ethereum?
 
 ---
 
 # How does Ethereum Work?
-1. Lots of Accounts
-2. Cryptographic Primatives and Merkle Trees
-
-Also Powers Underlying Tech:
-* Cryptographically-secure hashing
+1. Cryptographic Hashes
+* Properties:
+    * "Digital Fingerprint"
     * Collision Prevention
+* Uses:
     * Data Origination
     * Data Obfuscation and Verification
-* Merkle Trees
+    * Merkle Trees
 
 <img src="https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png" width="80%">
 
 "Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
 
 ???
-Cryptography is at the heart of what Ethereum does, but it also enables some of th underlying tech:
 
-Because Ethereum is storing so much data,
+Cryptographic hashes is at the heart of what enables Ethereum,
+no blockchain technology would work without something that had the properties of the hashing function.
+A hashing function is something that takes a set of data and performs an operation on that variable-sized data,
+quickly returning a fixed-sized dataset (typically 32 bytes) representing that data, sort of like a "digital fingerprint".
+It is a repeatable operation, i.e. it will always return the same output for a given input.
+It is also considered a one-way operation, i.e. it is not feasible to determine the input from the output,
+without manually computing all possible combinations of the input,
+which is computationally infeasible without any additional information.
+
+A cryptographic hash has some additional features that make it ideal for security-conscious uses like cryptocurrencies.
+The first is that a cryptographic hash is collision-resistant,
+i.e. is equally likely to inhabit any output value for a given input.
+The second is that any small change in the input should produce a massive and uncorrelated change in the output,
+which makes it easy to identify malicious or corrupt changes.
+The last is that it should be computationally infeasible to find another set of data with the same hash as a given input.
+This prevents the possibility of overwriting data stored with a different set of data that matches the given hash.
+
+A cryptographic hash can be used to ensure the integrity of any given set of data,
+one example being in the blockchain itself, where each block contains the cryptographic hash of the previous block,
+so that each chain "locks" into the previous and prevents any one block from being modified without breaking the chain.
+This works for data that isn't visible publicly, as a cryptographic hash of some private document can be verified by
+any third party by simple running the cryptographic hash again and verifying the output.
+
+Because Ethereum is storing so much data from so many parties,
 and has to ensure the security and immutability of the data in a fast and efficient manner,
 there was a need for an algorithm that can store and prove the integrity of arbitrary key-pairs.
-
-Merkle trees
-
-TODO: maybe move this slide up earlier
+The Merkle tree, a data structure patented by Ralph Merkle in 1979, was co-opted for this use.
+It relies primarily on the properties of the cryptographic hash to enable secure data storage with
+quick data access and verification, without having to store the entire data tree.
 
 ---
 
 # How does Ethereum Work?
-1. Lots of Accounts
-2. Cryptographic Primatives and Merkle Trees
+1. Cryptographic Hashes
+2. Accounts
+* Everything is an account (stored at an address)
+* Two types of accounts:
+    * "External Accounts" - 20 bytes of public key hash
+    * "Smart Contracts" - Schema + Rules + Datastore
+* `2^160 = 1.46 x 10^48` total accounts
+
+![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
+
+???
+
+Ethereum is implemented using two different types of accounts, or addresses.
+
+When you start using Ethereum, you will need an External Account,
+which is a Public/Private keypair provided by your node software or hardware wallet.
+You can have as many External Accounts as you desire.
+External accounts can hold Ether, can interact with the external world,
+and are (currently) the only way to create and pay for a transaction.
+Each transaction is signed by the private key associated with the external account,
+which determines the origination of the given transaction by verifying with the public key.
+
+An external account can create a transaction that passes through one or more Smart Contracts.
+Smart Contracts are compiled EVM bytecode stored at a specific location.
+They interact with themselves and other addresses based on the rules stored immutable at their address.
+They have data in the datastore which holds the state associated with their address.
+You compile EVM Bytecode from a higher level language like Solidity or Viper,
+and deploys that bytecode to a special address that forever assigns it to a new account.
+Once bytecode is saved to a specific smart contract account by the deployment process,
+it is impossible to modify that bytecode, unless operations are provided to allow it to be.
+
+---
+
+# How does Ethereum Work?
+1. Cryptographic Hashes
+2. Accounts
 3. Economics!
 
 We can now (re-)write the Digital Economy!
@@ -195,15 +269,19 @@ We can now (re-)write the Digital Economy!
 
 ???
 
-TODO: I think we should re-organize the materials a little
-a rough idea to start a conversation
-1. What is a vanilla crypto currency
-2. History (why did the ETH project start)
-3. What makes ETH different
-4. How does one use the ETH network (user stories)
+The real reason why Ethereum works is due to economic incentives.
+The consensus and mining processes for adding to the blockchain are secured
+using a combination of different economic incentives.
+The way transactions are verified, processed and paid for also have to do with economics,
+as the miners have incentives to mine transactions due to the fees they can recoup for doing so.
+Decentralized applications also need to make use of economic incentives to ensure their featuresets
+are not manipulated by a malicious third party, whether it be a botnet with 1000's of Ethereum addresses,
+or a "whale" that has many orders of magnitude more tokens or ether than the average user.
+Economics also dictate HOW you code, as you don't want hold vast amounts of funds in insecure smart contracts,
+at least more than what either party is willing to lose.
 
-For the first time in history, we can re-write the economic rules of large industries.
-Ethereum enables some facinating new economic rules for interacting with the digital economy.
+The implications of this are probably the most exciting outcome of blockchain technology in general.
+For the first time in history, we can re-write the economic rules of large industries and networks!
 
 ---
 
@@ -213,133 +291,42 @@ Ethereum enables some facinating new economic rules for interacting with the dig
     2. Privacy
     3. Smart Contract Security
 
-* Some solutions:
-    * Sharding - "The multiverse approach"
-    * Proof of Stake - "Consensus via Financial Incentives"
-    * Zcash collaboration - zk-SNARKS in Ethereum
-    * Viper Smart Contract Langauge
+Some solutions:
+* Sharding - reduce scalabilty issues
+* Proof of Stake - improve transaction finality
+* Zcash collaboration - enable private transactions
+* Vyper Smart Contract Langauge - more secure langauge
 
 ???
 
-The future of Ethereum is very bright, but there are some problem areas
+The future of Ethereum is very bright, but there are some problem areas that are in work.
 
-# Sharding
-* "Enable the multiverse"
-* "Shards" will be subscribable, e.g. you only get what you're interested in
-* Shards share consensus with the main blockchain, have to break all shards
+Currently, the Ethereum network has a theorhetical limit of 15 transactions/sec,
+which is much less than the 45k txns/sec that payment processors like Visa can manage,
+and far, far less than what would be needed to enable general-purpose dapps.
+Initiaves like Sharding and Proof of Stake are intended to reduce the costs,
+both economic and computational, with running the Ethereum network, as well as
+improve the transaction bandwidth to the level required to handle the demand of a
+universe full of dapps.
+Proof of Stake also has the nice side effect of nearly eliminating the environmental impacts
+of safeguarding blockchain networks, the emissions of which, by 2020, will be more than
+an industrialized western nation like Denmark.
 
-# Proof of Stake
-* Reduces e-waste and energy consumption
-* Will enable small-time hodlers to participate as much as large instiutions can
+In order to protect the privacy and security of the general population,
+there needs to be a reasonable means of making private transactions.
+For vulnerable populations like refugees and citizens of authoratarian regimes
+this is especially important, with key members of the community promoting this
+as one of the primary needs of users of this technonolgy.
+Recently, the Ethereum community was able to integrate the technology behind
+privacy-focused cryptocurrency Z-cash, which is called zk-SNARKS or "zero-knowledge proofs",
+and send a private transaction that is secured by the public Ethereum network.
+Future colloborations of this type are becoming increasingly important to the project.
 
-# Privacy e.g. Zcash collaboration
-* "Zero knowledge proofs" - Private transactions
-    * "I know that you did this correctly" without knowing what you did
-* Ring signatures
-    * I only know that someone in this group of addresses did this transaction
-* Privacy is important!
-    * Authoritarian Regimes and marginalized groups
-    * Private data (health records, financial statements)
-
-Viper is intended to conquer Smart Contract Security
-
----
-
-# The Ethereum Ecosystem
-
-* Clients
-* Programming Langauges
-* Tools
-
-???
-
-There are many different pieces of the Ethereum Ecosystem
-
----
-
-
-# Programming Languages
-
-```javascript
-/* Solidity */
-contract DNS {
-    mapping (bytes32 => {address owner, uint128 ip}) domains
-    function register(bytes32 domainName) {
-        require(domains[domainName].owner == 0x0);
-        domains[domainName].owner = msg.sender;
-    }
-    function setIP(bytes32 domainName, uint128 ip) {
-        require(domains[domainName].owner == msg.sender);
-        domains[domainName].ip = ip;
-    }
-}
-```
-
-```python
-# Viper
-domains: { owner: address, ip: num }[bytes32]
-
-def register(domain_name: bytes32):
-    assert not self.domains[domain_name].owner
-    self.domains[domain_name].owner = msg.sender
-
-def set_ip(domain_name: bytes32, ip: num):
-    assert self.domains[domain_name].owner == msg.sender
-    self.domains[domain_name].ip = ip
-```
-
-???
-
-Speaking of programming languages, there are a few different options in the Eth ecosystem
-
-# Solidity
-* JavaScript-like syntax
-* Fully featured
-* Wide range of use cases for dapps
-* Current king
-
-# Viper
-* Easier, Python-like syntax
-* Designed to be secure (vs. fully featured)
-* Restricted language expressiveness (80% common use solutions)
-* Formal Verification "batteries included"
-* I contribute!
-
-# Others...
-
----
-
-# Tools
-* Node Clients
-    * [Geth](https://geth.ethereum.org/)/[Mist](https://github.com/ethereum/mist/releases)
-    * [Parity](https://parity.io)
-    * [MetaMask](https://metamask.io/)
-* Web3
-    * [Web3.js](https://github.com/ethereum/web3.js/)
-    * [Web3.py](https://github.com/ethereum/web3.py)
-* IDEs and Deployment Management Platforms
-    * [Truffle](http://truffleframework.com/)
-    * [Populus](https://github.com/ethereum/populus)
-    * [Remix](http://remix.ethereum.org/)
-
-???
-
-Some of the tools in the Ethereum Ecosystem we use are
-
-# Nodes or Clients
-* Interact with Ethereum
-* Basically access State and Send Transactions
-* Can be Full (validates all blocks and transactions in blockchain)
-* Or Light (only verify integrity and obtains state using Merkle Trees)
-* Or Thin (doesn't validate or verify anything, trusts 3rd party)
-
-# Web3
-* Interface to the web browser
-* Libraries for interacting with Ethereum on the Web
-
-# IDEs and Deployment Management Platforms
-* Help write, test, and deploy Smart Contracts
-* Remix is suggested for introductory use only
-
-Tools are still growing and changing at an incredible rate!
-
+Lastly, as some of you may know, there are big problems with Solidity,
+the Smart Contract language Ethereum currently uses to create Dapps.
+Almost a billion dollars of funds (at a Ether price of $1000) were lost since the project's inception,
+a frankly unsustainable amount of money for the platform to be successful in the long term.
+While Solidity was successful in getting web developers onboard early in the project's life,
+security-orientated languages (like Vyper) will need to be developed that mitigate many of the
+issues that have been discovered with smart contracts, and allow developers to create safe, optimal
+contracts for their Dapps with minimal hassle and special knowledge.

@@ -11,15 +11,18 @@ and we'll tell you why!
 
 # Why Ethereum?
 
-**Ethereum by the Numbers:**
+.left-column.width-50[
 1. 10000+ Developers Worldwide
 2. 1000+ Active Projects
 3. Over 1m smart contracts
 4. Over 18 million accounts
 5. 200+ companies in the Ethereum Enterprise Alliance
 6. Exactly 1 Vitalik
+]
 
+.right-column.width-50.center[
 ![Vitalik](https://i.warosu.org/data/biz/img/0012/13/1461563310243.jpg)
+]
 
 ???
 
@@ -52,10 +55,14 @@ So what is Ethereum?
 ---
 
 # What is Ethereum?
+.left-column.width-25[
 1. It's a blockchain (duh)
+]
 
+.right-column.width-75[
 ![State Machine](https://cdn-images-1.medium.com/max/800/1*jZ-VRXBJtOnePofB0z2Q8A.png)
 ![Blockchain](https://cdn-images-1.medium.com/max/800/1*l_H58_pGm3XGwGoQlO9FVQ.png)
+]
 
 ???
 
@@ -84,9 +91,12 @@ you can think of Ethereum as not just another blockchain.
 ---
 
 # What is Ethereum?
+.left-column.width-25[
 1. It's a blockchain
 2. It's a computer
+]
 
+.right-column.width-75[
 The World's Largest and Most Expensive Computing Device
 
 Ethereum Virtual Machine (EVM) Specs:
@@ -99,6 +109,7 @@ Ethereum Virtual Machine (EVM) Specs:
 *Check out* [Eth Gas Station](ethgasstation.info) *for transaction pricing information*
 
 ![EVM](https://cdn-images-1.medium.com/max/800/1*UNCaS12SsPln7DEnRvcONQ.png)
+]
 
 ???
 
@@ -144,11 +155,15 @@ at a later point in time.
 ---
 
 # What is Ethereum?
+.left-column.width-33[
 1. It's a blockchain
 2. It's a computer
 3. It's really a database
+]
 
+.right-column.width-66[
 A turing-complete database for the Decentralized Web!
+]
 
 ???
 
@@ -174,6 +189,8 @@ What do I need to know about Ethereum to code my Dapp?
 ---
 
 # What Makes Ethereum Work?
+
+.left-column.width-50[
 1. Cryptographic Hashes
 * Properties:
     * "Digital Fingerprint"
@@ -182,8 +199,12 @@ What do I need to know about Ethereum to code my Dapp?
     * Data Origination
     * Data Obfuscation and Verification
     * Merkle Trees
+]
 
-<img src="https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png" width="80%">
+.right-column.width-50[
+.center[### Merkle Trees]
+![Merkle Tree](https://cdn-images-1.medium.com/max/800/1*5xWwPX2R8d37MeWSFOJPnA.png)
+]
 
 "Everyone should bow down and pray to Ralph Merkle" - Vitalik, DevCon3
 

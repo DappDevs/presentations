@@ -172,7 +172,7 @@ What do I need to know to code my Dapp in Ethereum?
 
 ---
 
-# How does Ethereum Work?
+# What Makes Ethereum Work?
 1. Cryptographic Hashes
 * Properties:
     * "Digital Fingerprint"
@@ -220,9 +220,9 @@ quick data access and verification, without having to store the entire data tree
 
 ---
 
-# How does Ethereum Work?
+# What Makes Ethereum Work?
 1. Cryptographic Hashes
-2. Accounts
+2. Public Key Cryptography
 * Everything is an account (stored at an address)
 * Two types of accounts:
     * "External Accounts" - 20 bytes of public key hash
@@ -254,9 +254,9 @@ it is impossible to modify that bytecode, unless operations are provided to allo
 
 ---
 
-# How does Ethereum Work?
+# What Makes Ethereum Work?
 1. Cryptographic Hashes
-2. Accounts
+2. Public Key Cryptography
 3. Economics!
 
 We can now (re-)write the Digital Economy!

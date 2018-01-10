@@ -40,12 +40,12 @@ and one of the brightest minds in the space at the helm of it all.
 
 Even if Ethereum isn't ultimately the blockchain to rule all blockchains,
 the skills and knowledge needed to learn distributed application development
-will be transferrable to whatever succeeds it.
-The major differences between Ethereum and competing smart contract platforms
+will be transferrable to whatever competitors come into existance.
+The major differences between Ethereum and other smart contract frameworks
 are simply the underlying tradeoffs use to secure the blockchain,
 and what programming language you use to write smart contracts.
 
-Plus, *Ethereum* just sounds cool, right?
+Plus, *Ethereum* just sounds cool!
 
 So what is Ethereum?
 
@@ -59,12 +59,12 @@ So what is Ethereum?
 
 ???
 
-Yes, it is a blockchain. (hilarity ensues)
+Well, it is a blockchain. (hilarity ensues)
 
 Ethereum stores transactions on an immutable ledger, basically like any other blockchain.
 
 What makes Ethereum special is that the transactions it stores in it's blocks aren't inherantly
-the transfer of a financial asset, although it can and often does involves a token or coin.
+the transfer of a financial asset, although it can involve a token or coin.
 The transactions involve execution of a string of pre-programmed computer logic statements,
 which can transfer valuable assets of any type or specification over a common framework.
 
@@ -76,7 +76,7 @@ preventing the acceptance of that modified chain through the rest of the network
 
 Each of these transactions progresses the "state" of Ethereum, moving valuable assets
 between parties or executing smart contracts (immutable pieces of code stored on the blockchain)
-according to the rules of the network that all clients agree to by running the software.
+according to the rules of the network that all clients agree to when running the network.
 
 Because of the transactions being more than simple transfers of assets in a distributed ledger,
 you can think of Ethereum as not just another blockchain.

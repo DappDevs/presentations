@@ -121,22 +121,23 @@ In order to counteract this, the EVM introduces the concept of "Gas"
 
 For every instruction executed on the EVM as part of a transaction, "Gas" is charged
 according the resources used by the instruction, whether it be computing cycles, memory storage,
-or storage to the smart contract's data store.
-Transactions fees are charged according to the gas usage of the transaction and the "Gas price"
-provided by the sender, and the miners recoup the resulting fees.
-`Fees = Gas Price x Gas Used`
+or storage to the global data store.
+Transaction fees are charged according to the gas usage of the transaction and the "Gas price"
+provided by the sender, and the miners recoup the resulting fees,
+aka `Fees = Gas Price x Gas Used`.
 
 Every transaction must be executable for less than the gas limit, which is an upper bound
-chosen by consensus by the miners that secure the Ethereum network.
+chosen through consensus by the miners that secure the Ethereum network.
 Any transaction that exceeds this upper bound will be recorded as rejected by the network,
-and the corresponding fee will be recouped by the miner for mining the block including the failed transaction.
+and the corresponding fee will still be recouped for mining the block
+that includes the failed transaction.
 
 "Gas" isn't just charged for instruction use, but also for memory and storage use.
 Ethereum could theorhetically store an unlimited amount of data "on-chain",
 but there is a practical limit as the storage costs are currently many orders of magnitude
-more than any competiting data storage platform.
-Due to these costs, it often only useful to store critical data "on-chain", including
-cryptographic hashes of off-chain data (such as evidence or legal documentation),
+more than competiting data storage platforms.
+Due to these costs, it often only useful to store critical data "on-chain",
+which may include cryptographic hashes of off-chain data (such as evidence or legal documentation),
 which can be used to "prove" submitted documentation corresponds to these stored hashes
 at a later point in time.
 
@@ -155,8 +156,8 @@ In my opinion, the best way to think of Ethereum is a really interesting databas
 Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance: Atomicity, Consistency, Isolation, Durability
 
 * Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution of each transaction
-* Data storage is "durable" thanks to the blockchain's fault tolerant properties
-* Arbitrary Schema + Rules (Queries) are stored in "Smart Contracts", along with per-contract datastore
+* Data storage is "durable" thanks to the blockchain network's fault tolerant properties
+* Schema + available Queries are stored in "Smart Contracts", which modify per-contract datastore
 * Different data "endpoints" (Smart Contracts) can interact with other endpoints easily
 * Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
 * Lookups are fast and secure, thanks to "Merkle Trees" (which you should totally look into)

@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+img { max-width: 100%; }
+.white { color: #FFFFFF;}
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
+.remark-slide-content { background-size: contain; background-position: bottom; }
+.black-background { background-color: #000; }
+.center { text-align: center; }
+.width-25 { width: 25% }
+.width-33 { width: 33% }
+.width-50 { width: 50% }
+.width-66 { width: 66% }
+.width-75 { width: 75% }
+.left-column { float: left; }
+.right-column { float: right; }

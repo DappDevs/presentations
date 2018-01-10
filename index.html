@@ -3,28 +3,11 @@
   <head>
     <title>Intro DappDevs v0.1b</title>
     <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-      }
-      h1, h2, h3 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-      }
-      img { max-width: 100%; }
-      .white { color: #FFFFFF;}
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
-      .remark-slide-content { background-size: contain; background-position: bottom; }
-      .black-background { background-color: #000; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
     <textarea id="source"></textarea><!-- for remark to hook into -->
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script src="./remark-latest.min.js">
     </script>
     <script>
       // Place all of your files here
@@ -48,14 +31,14 @@
         if (i > 0) source.innerHTML += "---\n"
         source.innerHTML += "\n" + xmlhttp.responseText;
       };
-    var slideshow = remark.create({
+      var slideshow = remark.create({
         ratio: '16:9',
         navigation: {
             scroll: false,
             touch: true,
             click: false
         },
-    });
+      });
     </script>
   </body>
 </html>

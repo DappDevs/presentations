@@ -115,8 +115,8 @@ to the blockchain, thus the EVM is the most important component of the node soft
 
 Because each transaction is run concurrently on every node, there are potential attack
 vectors to the network that arise from any computing device.
-Any coding error such as infinite looping (the Halting problem), endless stack recursion,
-and other errors could be co-opting to deny service of the network to other transactions.
+Any coding error such as an infinite loop (aka the Halting problem), stack overflow,
+and others could be co-opted by an attacker to deny service of the network to other users.
 In order to counteract this, the EVM introduces the concept of "Gas"
 
 For every instruction executed on the EVM as part of a transaction, "Gas" is charged

@@ -48,7 +48,14 @@
         if (i > 0) source.innerHTML += "---\n"
         source.innerHTML += "\n" + xmlhttp.responseText;
       };
-      var slideshow = remark.create();
+    var slideshow = remark.create({
+        ratio: '16:9',
+        navigation: {
+            scroll: false,
+            touch: true,
+            click: false
+        },
+    });
     </script>
   </body>
 </html>

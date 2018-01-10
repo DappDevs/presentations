@@ -169,7 +169,7 @@ background-image: url(https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRA
 ???
 
 Awesome, we now know what Ethereum is, but how does it work?
-What do I need to know to code my Dapp in Ethereum?
+What do I need to know about Ethereum to code my Dapp?
 
 ---
 
@@ -189,8 +189,8 @@ What do I need to know to code my Dapp in Ethereum?
 
 ???
 
-Cryptographic hashes is at the heart of what enables Ethereum,
-no blockchain technology would work without something that had the properties of the hashing function.
+Cryptographic hashing functions are at the heart of what enables Ethereum.
+No blockchain technology would work without something that had the properties of the hashing function.
 A hashing function is something that takes a set of data and performs an operation on that variable-sized data,
 quickly returning a fixed-sized dataset (typically 32 bytes) representing that data, sort of like a "digital fingerprint".
 It is a repeatable operation, i.e. it will always return the same output for a given input.

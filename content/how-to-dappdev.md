@@ -21,6 +21,7 @@
     * Be active in the DappDev community
     * Work with others
     * Share what you learn
+    * Workshops!
 
 ???
 

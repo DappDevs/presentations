@@ -114,26 +114,27 @@ with whatever skillset you may have and whatever time you may have to give.
 
 So, with that out of the way, you might be asking "How can I get involved?".
 The purpose of our group is to shed a bit of light onto that path.
-We are just one group of people, and we can only do so much by ourselves.
+We are just one group of people, and we can only do so much by ourselves,
+so we need your involvement to grow and structure our movement.
 
 The first thing we ask is that you learn a little bit about the tech.
-You don't have to build it yourself, but like any technology, it pays to
+You don't have to be an expert, but like any technology, it pays to
 understand the terms and concepts underpinning what it is you wish to work on.
 You may find yourself intrigued by a particular problem that needs to get solved,
-or you might be more of the type of person that enjoys building concepts together
+or you might be more of the type of person that enjoys combining concepts together
 to form even better ideas. It all starts here.
 
 The second is that you familarize yourself with some of the concepts underpinning
 the economics of what we are building. Terms like "Futures" and "Prediction Markets",
 or what it means to "Stake" tokens on a particular outcome, these are very important
-design mechanisms that need to be well-understood to be used effectively.
+design mechanisms in crypto that need to be well-understood to be used effectively.
 
 Next is we need to understand what particular use cases are a successful use of the
 underlying technology. This serves a double duty. Firstly, you will learn more about
 the ecosystem and what problems are already being solved, or what projects you can
 leverage in unique ways to solve other problems. But more importantly, it will help
 you conceptualize the very difficult concepts and design patterns that are needed to
-build Dapps.
+build Dapps. Together, we can form a consensus around how to evaluate all of these projects.
 
 I think one of the most important takeaways I would like to share with you today is
 that, given most of these projects are open source projects and built off of many other
@@ -142,8 +143,8 @@ mean complaining when things don't work right, but actually participating and bu
 these tools so that they are robust and useful to the larger ecosystem.
 It used to be that open source developers either worked for free, or were somehow
 amazing enough to be sponsored by large corporations, but with projects like GitCoin
-and Solidified offering bounties for contributing and identifying issues with these
-projects, you can actually earn a fair amount of additional income with your contributions.
+and Solidified offering bounties for contributing and identifying issues with dapps,
+you can actually earn a fair amount of additional income with your contributions.
 It's really a win-win!
 
 Last but most importantly, you have to participate in the discussion.
@@ -151,9 +152,9 @@ This not only means joining many different online communities and sharing your t
 and learnings as you chug from the fountain of crypto knowledge, but also gathering in
 person, like we're doing here today, and discussing with people face-to-face.
 One of the biggest issues we are trying to solve with our organization is providing
-a means for all contributors to get together and help each other succeed.
+a means for the community to get together and help each other, and the movement, succeed.
 Face-to-face interaction is one of the most effective means of cementing knowledge,
-and the ideas you'll generate among this particularly imaginative crowd are intoxicating.
+and the ideas you'll generate among this particularly imaginative crowd are just intoxicating.
 
 We also will be running some workshops, more formal oppurtunities for you to get
 together and learn exactly how things work, so keep an eye out for these events.

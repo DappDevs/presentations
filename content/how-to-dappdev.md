@@ -30,9 +30,9 @@ blockchain technology has the ability to decentralize trust
 and free us to engage in peer-to-peer commerce without reliance
 on (and enrichment of) trusted third parties.
 
-The impact is huge:
+The potential impact is huge:
 Web 3.0 will enable us to build a more equitable, global economy
-the concerns of the average global citizin share equal importance
+where the concerns of the average human share equal importance
 to that of the world's largest institutions.
 This will revolutionize global commerce as we know it!
 
@@ -52,13 +52,15 @@ or at least ambivalent to it.
 While there are some malicious parties out there of course,
 but we should try to think of our competitors as potential partners
 we should be working with instead of burning the whole thing down and starting over.
-But we must also keep, a strong conviction to the world we seek to build,
+But we must also keep a strong conviction to the world we seek to build,
 especially when we disagree with what these "partners" think they know about
-the world we live in.
+the world we live in. One of my personal mantras sums this up:
+"Strong opinions, loosely held"
 
 That's all well and good, but here's the interesting part:
 Who forms "The Team" of a movement that inherantly has no leaders?
-The answer is anyone and everyone who involves themselves, in whatever capacity they can.
+The answer is anyone and everyone who involves themselves of course,
+and I'm hoping that means you!
 
 One of the important indicators to the majority of experienced venture capitalists
 that a project they are investing in will ultimately be a successful investment
@@ -67,7 +69,7 @@ This is especially important to the crypto movement,
 where the pace of innovation is quickly being outdone by the financial enthusiasm around it.
 As any survivor of the dot com bubble will be quick to tell you,
 this is exactly how a bubble forms, and when the majority of people realize this
-and some event comes along to shatter our promises, this bubble will pop.
+and some event comes along that shatters this perception, this bubble will pop like any other.
 
 This is a good thing, it clears the air of oppurtunists and only leaves those who
 understand the true potential of the technology their movement has been evangilizing.
@@ -76,8 +78,8 @@ and the internet is every bit as integral to our lives today as those voices of
 the web era were telling us. They just got the timing wrong.
 
 I can't tell you when the bubble will pop around cryptocurrency, or even if it will happen,
-but I can tell you that promise of the technology is based in reality,
-and that it will change the world over the next decade or two.
+but I can tell you that promise of the technology has a good foundation,
+and that it will absolutely change the world over the next decade or two.
 It's your choice whether or not you want to be a part of it, in whatever way you can,
 with whatever skillset you may have and whatever time you may have to give.
 

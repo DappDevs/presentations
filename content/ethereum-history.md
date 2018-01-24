@@ -1,14 +1,19 @@
 # History of Ethereum
+
+.left-column.width-50[
 * "Bitcoin needs a scripting language" - Vitalik Buterin
 * Ethereum Whitepaper (2013)
 * Original team of 4 core developers
 * Public Crowdsale July-August 2014, raising $20m
 * "Olympic" - 1st Public Beta release, May 2015
+* Devcon 1: London, November 2015
 * "Homestead" - 1st Stable release, March 2016
-* The DAO Hack, June 2016
-* Ethereum Classic Hardfork
-* Rise of the ICO, 2017
-* 2018 - PoS, Sharding, etc.
+
+]
+
+.right-column.width-50[
+![Ethereum Team](https://steemitimages.com/0x0/https://steemitimages.com/DQmanz43Cd5zPqUyxsoz9dkbyV1ULisdsHf63drgty6aVWE/2.PNG)
+]
 
 ???
 
@@ -34,6 +39,25 @@ By May of the following year, Ethereum had released it's first public beta,
 offering 25k Ether rewards for stress testing the network.
 In March 2016, Ethereum had it's first public release,
 including improvements to transaction processing, gas pricing, and security.
+
+---
+
+.left-column.width-50[
+# History of Ethereum
+* The DAO Hack, June 2016
+* Devcon 2: Shanghai, November 2016
+* Ethereum Classic Hardfork
+* Rise of the ICO, 2017
+* Devcon 3: Cancun, November 2017
+* 2018 - PoS, Sharding, Plasma, etc.
+]
+
+.right-column.width-50[
+![The DAO](https://pbs.twimg.com/media/DOJDEmyXUAEgPNU.jpg)
+]
+
+???
+
 Following the success of the first public release,
 Ethereum formed a Decentralized Autonomous Organization called The DAO,
 which was a set of smart contracts intended to invest into the burgeoning Ethereum ecosystem.

@@ -3,7 +3,7 @@ background-image: url(https://i.redd.it/408ryru2vzty.jpg)
 background-position: top;
 
 ### Intro to Dapp Development with Ethereum
-*Presented by* [DappDevs.org](dappdevs.org)
+*Presented by DappDevs.org*
 
 ???
 

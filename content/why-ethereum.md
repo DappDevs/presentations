@@ -9,9 +9,10 @@ and we'll tell you why!
 
 ---
 
+.left-column.width-50[
+
 # Why Ethereum?
 
-.left-column.width-50[
 1. 10000+ Developers Worldwide
 2. 1000+ Active Projects
 3. Over 1m smart contracts
@@ -21,7 +22,9 @@ and we'll tell you why!
 ]
 
 .right-column.width-50.center[
-![Vitalik](https://i.warosu.org/data/biz/img/0012/13/1461563310243.jpg)
+.height-75[
+![Vitalik](https://secure.meetupstatic.com/photos/event/e/1/9/0/highres_438297744.jpeg)
+]
 ]
 
 ???

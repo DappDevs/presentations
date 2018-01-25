@@ -86,12 +86,12 @@ Please note we have to be out of the space by [time].
 
 **Our Speaker**
 
-Our speaker today is Bryant Eisenbach, who is our lead technical content creator at DappDevs,
+Our speaker today is Bryant Eisenbach, who is lead of technical content at DappDevs,
 as well as an independant Decentralized Application Developer in the Ethereum ecosystem.
 
 He currently is also lead smart contract developer for two Ethereum startups, and has done
 dapp architecture consulting for several clients looking to build business ideas on Ethereum.
 
-He previously was a software developer in the aerospace industry designing flight control software,
-and has been active in the Ethereum ecosystem contributing to their open source projects since
-early 2017.
+He previously was a software developer in the aerospace industry with 6 years experience
+designing flight control software, and has been active in the Ethereum ecosystem contributing
+to their open source projects since early 2017.

@@ -2,14 +2,14 @@ class: center white black-background
 background-image: url(https://i.redd.it/408ryru2vzty.jpg)
 background-position: top;
 
-### Intro to Dapp Development with Ethereum
+### Intro to Decentralized Applications on Ethereum
 *Presented by DappDevs.org*
 
 ???
 
 (Chapter Host)
 
-# What is DappDevs?
+**What is DappDevs?**
 
 Our focus is on building an autonomous learning community that enables
 teachers and students (members) to learn about building blockchain applications,
@@ -26,7 +26,7 @@ We will help them get set-up and provide resources / guidance where we can.
 
 We currently have chapters established in New Haven, Hartford, and Stamford.
 
-# Next Steps
+**Next Steps**
 
 As of right now, we’re running this intro series until early March across our 3 chapters.
 We would love your support on getting more people like yourselves to attend.
@@ -65,27 +65,33 @@ Technical Content Creator **@dappdevs**
 
 ???
 
-(Chapter Host)
-
-# Agenda
+**Agenda**
 
 Our Agenda for today is to present for 30-45 mins on some background information
 about what a dapp is and how to get started programming one.
+
 Additionally, we will go over the Ethereum framework, the specific tools in the ecosystem,
 as well as some examples of popular Ethereum dapps and what their use cases of Ethereum are.
+
 Lastly, we will sum up a list of resources of where to get started learning more about the
 ecosystem, as well as how to get further involved with DappDevs and what this community means
-to us. After the presentation, our speaker will answer questions for approximately 15-30 mins,
+to us.
+
+After the presentation, our speaker will answer questions for approximately 15-30 mins,
 and then we'll break for networking and casual conversation.
+
 Please note we have to be out of the space by [time].
+
 [Mention if we are doing something after]
 
-# Our Speaker
+**Our Speaker**
 
 Our speaker today is Bryant Eisenbach, who is our lead technical content creator at DappDevs,
 as well as an independant Decentralized Application Developer in the Ethereum ecosystem.
+
 He currently is also lead smart contract developer for two Ethereum startups, and has done
 dapp architecture consulting for several clients looking to build business ideas on Ethereum.
+
 He previously was a software developer in the aerospace industry designing flight control software,
 and has been active in the Ethereum ecosystem contributing to their open source projects since
 early 2017.

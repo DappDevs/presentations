@@ -14,23 +14,23 @@ Well, it is a blockchain. (hilarity ensues)
 
 Ethereum stores transactions on an immutable ledger, basically like any other blockchain.
 
-What makes Ethereum special is that the transactions it stores in it's blocks aren't inherantly
-the transfer of a financial asset, although it can involve a token or coin.
-The transactions involve execution of a string of pre-programmed computer logic statements,
+What makes Ethereum special is that the transactions aren't simply the transfer of a coin,
+but the execution of pre-programmed computer logic statements called Smart Contracts,
 which can transfer valuable assets of any type or specification over a common framework.
 
 For those who haven't learned too much about blockchains, a brief decription:
 A blockchain stores a series of transactions into blocks,
-where each block is cryptographically linked through network consensus to the previous block,
-such that any modification of any "link" in the chain would can be detectable,
-preventing the acceptance of that modified chain through the rest of the network.
+where each block is linked to the previous through network consensus rules.
+Any modification of a "link" in the chain would be detectable,
+so all other parties would know a change was made.
 
 Each of these transactions progresses the "state" of Ethereum, moving valuable assets
-between parties or executing smart contracts (immutable pieces of code stored on the blockchain)
-according to the rules of the network that all clients agree to when running the network.
+between parties by executing smart contracts (which are themselves stored in the "state").
+Since all parties know and trust the rules by which transactions are executed,
+they can trust that the "state" has been correctly maintained.
 
-Because of the transactions being more than simple transfers of assets in a distributed ledger,
-you can think of Ethereum as not just another blockchain.
+Since Ethereum transactions are more than simple transfers of assets in a distributed ledger,
+you can think of Ethereum as more than a blockchain.
 
 ---
 
@@ -57,42 +57,34 @@ Ethereum Virtual Machine (EVM) Specs:
 
 You could also think of Ethereum as a computer that is shared by the world.
 
-The code stored in Ethereum's blockchain in smart contracts is executable by the EVM,
-which is a simple, stack-based processor that validates proper execution of transactions
-which modify the "State" or data storage of the Ethereum network.
-The EVM is run on every node of the network, concurrently and in parallel, such that
-each transaction execution results in the exact same modification of the underlying state
+Every transaction that is stored in the blockchain is processed by the Ethereum
+Virtual Machine, a simple computing device that determines the "state" of Ethereum.
+The EVM is run on every node of the network concurrently, such that
+each transaction results in the exact same modification of the underlying state
 no matter what implementation of the node software is used.
-Running the transactions correctly is part of the consensus process of including new blocks
-to the blockchain, thus the EVM is the most important component of the node software.
+Since the "state" itself is one of the parameters logged in the block by the miners,
+all parties agree that the state is consistent when they come to consensus via mining.
 
-Because each transaction is run concurrently on every node, there are potential attack
-vectors to the network that arise from any computing device.
-Any coding error such as an infinite loop (aka the Halting problem), stack overflow,
-and others could be co-opted by an attacker to deny service of the network to other users.
-In order to counteract this, the EVM introduces the concept of "Gas"
+Because the EVM is a Turing Machine, it suffers from the Halting problem,
+which means it's not possible to tell if a transaction will be computable in a finite amount of time.
+This means it would be possible to stop the network from processing transactions,
+and result in a denial of service.
+To solve this, and many other potential attacks, Ethereum introduces the concept of Gas.
 
-For every instruction executed on the EVM as part of a transaction, "Gas" is charged
-according the resources used by the instruction, whether it be computing cycles, memory storage,
-or storage to the global data store.
-Transaction fees are charged according to the gas usage of the transaction and the "Gas price"
-provided by the sender, and the miners recoup the resulting fees,
-aka `Fees = Gas Price x Gas Used`.
+For every instruction executed in a transaction, "Gas" is charged according the resources
+used, whether it be computing cycles, memory storage, or storage to the global data store.
+The miners decide what they want the "gas price" to be in order to collect fees from processing
+a transaction, this not only prevents the attacks from occuring, but rewards the miners for
+their activity. Every user that sends a transaction is expected to pay a fee to get it accepted,
+and that fee is transferred to the miner regardless of the success of the transaction.
 
-Every transaction must be executable for less than the gas limit, which is an upper bound
-chosen through consensus by the miners that secure the Ethereum network.
-Any transaction that exceeds this upper bound will be recorded as rejected by the network,
-and the corresponding fee will still be recouped for mining the block
-that includes the failed transaction.
+The miners also agree on a gas limit, which is the total amount of gas a transaction can use.
+Exceeding this limit will also fail the transaction, resulting in the miner getting all of
+fees for processing your transaction.
 
-"Gas" isn't just charged for instruction use, but also for memory and storage use.
-Ethereum could theorhetically store an unlimited amount of data "on-chain",
-but there is a practical limit as the storage costs are currently many orders of magnitude
-more than competiting data storage platforms.
-Due to these costs, it often only useful to store critical data "on-chain",
-which may include cryptographic hashes of off-chain data (such as evidence or legal documentation),
-which can be used to "prove" submitted documentation corresponds to these stored hashes
-at a later point in time.
+Due to these costs, it is only useful to store small programs and limited data "on-chain",
+so a Dapp Developer must be very smart in determining what code and data is important enough
+to live in Ethereum, and when to store it elsewhere.
 
 ---
 
@@ -101,23 +93,91 @@ at a later point in time.
 1. It's a blockchain
 2. It's a computer
 3. It's really a database
+
+A turing-complete database for the Decentralized Web!
+
+<br><br>
+**Most Databases are ACID compliant**
 ]
 
 .right-column.width-66[
-A turing-complete database for the Decentralized Web!
+
+![ACID](http://codes.pratikkataria.com/wp-content/uploads/2017/04/image.png)
 ]
 
 ???
 
-In my opinion, the best way to think of Ethereum is a really interesting database backend for decentralized applications.
-Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance: Atomicity, Consistency, Isolation, Durability
+In my opinion, the best way to think of Ethereum is a really interesting backend database 
+for decentralized applications.
+Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance:
+Atomicity, Consistency, Isolation, Durability
 
-* Updates are "atomic", "concurrent", and "consistent", thanks to EVM execution of each transaction
-* Data storage is "durable" thanks to the blockchain network's fault tolerant properties
-* Schema + available Queries are stored in "Smart Contracts", which modify per-contract datastore
-* Different data "endpoints" (Smart Contracts) can interact with other endpoints easily
-* Transaction "receipts" show data commits (include Logs) easily for "Light Clients"
-* Lookups are fast and secure, thanks to "Merkle Trees" (which you should totally look into
+When a transaction is sent, it is applied atomically.
+In Ethereum, this means if a transaction fails because it runs out of gas
+or encounters an exception, then the transaction is not applied.
+All nodes process this transaction together, so the transaction is applied
+"all or nothing" if confirmed by the network.
+
+Since every node agrees to the underlying rules to participate in the network,
+and how those rules are changed or extended through Smart Contracts,
+that means that every transaction is "consistently" applied and no node will
+disagree on the state.
+
+Each transaction is applied in the order it was received, and since each
+node is synchronized by block, all transactions are applied independantly
+and do not affect each other.
+That is not to say that the order of the transactions is not important,
+but that all nodes agree on the order of the transactions and how to apply them.
+
+Lastly, thanks to the amazing properties of the network, if even one of the
+tens of thousands of Ethereum nodes are still up and running, then the network
+remains consistent and doesn't lose data. The uptime of Ethereum is almost 100%!
+
+---
+
+# Ethereum Accounts
+
+.left-column.width-25[
+**2 Different Account Types**
+
+*External Account*
+* Originate Transactions
+* Can be endpoints 
+
+*Smart Contracts*
+* Activated via External Account
+* Perform stored code
+* Can call more transactions
+]
+
+.right-column.width-75[
+![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
+]
+
+???
+
+Ethereum is implemented using two different types of accounts, or addresses.
+
+When you start using Ethereum, you will need an External Account,
+which is a Public/Private keypair provided by your node software or hardware wallet.
+You can have as many External Accounts as you desire.
+External accounts can hold Ether and are (currently) the only way to create and pay for a transaction.
+Each transaction is signed by the private key associated with the external account,
+which verifies the origin of the given transaction using the the public key.
+
+An external account can create a transaction that passes through one or more Smart Contracts.
+Smart Contracts are compiled EVM bytecode stored at a specific location.
+
+They interact with themselves and other accounts based on the code stored at their address.
+You compile EVM Bytecode from a higher level language like Solidity or Viper,
+and deploys that bytecode to a special address that forever assigns it to a new account.
+Once bytecode is saved to a specific smart contract account by the deployment process,
+it is impossible to modify that bytecode, unless operations are provided to allow it to be.
+
+They also have a datastore which holds the state associated with their address.
+Each smart contract's datastore is stored in the state trie, and the merkle root
+of the state trie is stored in the blockchain after each set of transactions is applied.
+This shows that all states are consistent when processing the chain.
 
 ---
 
@@ -138,42 +198,9 @@ Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance:
 
 ???
 
----
+A bit more of a detailed walk-through
 
-# Anatomy of an Ethereum Transaction
 
-.left-column.width-25[
-**Different Receiver Accounts:**
-* External Account
-* Smart Contract
-
-*Smart Contracts* can send each other transactions!
-]
-
-.right-column.width-75[
-![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
-]
-
-???
-
-Ethereum is implemented using two different types of accounts, or addresses.
-
-When you start using Ethereum, you will need an External Account,
-which is a Public/Private keypair provided by your node software or hardware wallet.
-You can have as many External Accounts as you desire.
-External accounts can hold Ether, can interact with the external world,
-and are (currently) the only way to create and pay for a transaction.
-Each transaction is signed by the private key associated with the external account,
-which determines the origination of the given transaction by verifying with the public key.
-
-An external account can create a transaction that passes through one or more Smart Contracts.
-Smart Contracts are compiled EVM bytecode stored at a specific location.
-They interact with themselves and other addresses based on the rules stored immutable at their address.
-They have data in the datastore which holds the state associated with their address.
-You compile EVM Bytecode from a higher level language like Solidity or Viper,
-and deploys that bytecode to a special address that forever assigns it to a new account.
-Once bytecode is saved to a specific smart contract account by the deployment process,
-it is impossible to modify that bytecode, unless operations are provided to allow it to be.
 
 ---
 

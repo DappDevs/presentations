@@ -1,34 +1,38 @@
 
+.left-column.width-50[
 # What is a Dapp?
 
-.left-column.width-50[
 A Dapp is a *Decentralized Application*
 
 **Facts:**
-1. Users use Apps
-2. The Internet connects users
-3. Servers run the Internet
-4. Servers store code and data
-5. Servers are centralized
+1. Users like Web-connected Apps
+2. Apps come from The Internet
+3. The Internet uses servers
+4. Servers are complicated
+5. Apps run on AWS instead
 
 **Centralization Problems:**
 1. Central point of failure
-2. Gives central party power
-3. Monopolization
-4. It is not scalable
-5. It is very slow
+2. Empowers central parties
+3. Monopolization Risk
+4. Doesn't scale
+5. Reduced bandwidth
 
 ]
 
 
 .right-column.width-50[
+<br>
+<br>
 ![Network Topology](http://www.truthcoin.info/images/cent-decent.png)
+
+(No dapp presentation is complete without this figure)
 ]
 
 ???
 
 *Decentralized* might be an unfamiliar term for some,
-but everyone knows what a software application is.
+but everyone here knows what a software application is.
 Most software applications work because they are networked
 to other users of the application through what we call *The Internet*.
 
@@ -55,18 +59,25 @@ reduces speeds, taking more bandwidth to accomplish a simple task.
 
 ---
 
-# How do we Decentralize Apps?
+.left-column.width-50[
+# Decentralized Apps
 
 **What we needed:**
 1. Powerful Client Devices
 2. Content Delivery Networks
-3. Client-Side Dev Frameworks
+3. Client-Side Frameworks
 4. Great UX and UI
 5. Blockchains to store critical data
 
-*Also, we need CryptoKitties.*
-
 ![CryptoKitties](https://www.cryptokitties.co/images/landing-kitty06.svg)
+
+*Also, we need more CryptoKitties*
+]
+
+.right-column.width-50[
+<br><br><br>
+![CryptoKitties Mobile](http://www.cryptokitties.care/wp-content/uploads/2017/12/Screen-Shot-2017-12-13-at-7.27.46-PM.png)
+]
 
 ???
 

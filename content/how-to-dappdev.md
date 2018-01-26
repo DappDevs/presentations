@@ -45,7 +45,7 @@ Here are 5 reasons why I think you should become a DappDev.
 First off, this field is exciting. I don't think I need to explain that to you,
 the general excitement of what we can build with this technology speaks for itself.
 
-The main reason why it is exciting is because so many of the potential usecases of the
+The main reason why it is exciting is because so many of the potential use cases of the
 tech are just super impactful to our day-to-day lives and have the real potential to
 improve them. There is just so much good that can be accomplished here.
 
@@ -57,7 +57,7 @@ place for you.
 Of course, because of these reasons, being a dapp dev is currently extremely lucrative,
 and will remain a good career option in the near term. If and when the "Crypto Bubble Pops"
 the skills you learn will not only make you very valuable as developers in this new paradigm,
-but will also make you better engineers and more seasoned entrepeneurs in the long run.
+but will also make you better engineers and more seasoned entrepreneurs in the long run.
 
 Lastly, I think one of the coolest aspects of being a DappDev is flexibility.
 Because of how in-demand you are, you can really pick and choose what projects matter to
@@ -105,12 +105,12 @@ You may find yourself intrigued by a particular problem that needs to get solved
 or you might be more of the type of person that enjoys combining concepts together
 to form even better ideas. It all starts here.
 
-The second is that you familarize yourself with some of the concepts underpinning
+The second is that you familiarize yourself with some of the concepts underpinning
 the economics of what we are building. Terms like "Futures" and "Prediction Markets",
 or what it means to "Stake" tokens on a particular outcome, these are very important
 design mechanisms in dapps that need to be well-understood to be used effectively.
 
-Next is to become more familar with some software engineering concepts.
+Next is to become more familiar with some software engineering concepts.
 Dapps are all about process. If you don't have a process and follow it, you will lose
 yourself and your clients a whole lot of money.
 Learning how to design a platform architecture for your web app is step one of this process.
@@ -128,7 +128,7 @@ which we affectionately call the "Swiss Cheese Approach".
 All that means is that the best way to identify and mitigate risk in a software application
 is by adding many layers of different types of verification.
 So even if you make one small error (and we ALL do), you have several other layers backing it up.
-There's no one direct path through the block of swiss cheese.
+There's no one direct path through the block of Swiss cheese.
 
 That's how you make code "bullet-proof"!
 
@@ -183,7 +183,7 @@ It's really a win-win!
 
 Last but most importantly, you have to participate in the community.
 This not only means joining many different online communities and sharing your thoughts
-and learnings as you chug from the fountain of crypto knowledge, but also gathering in
+and learnings as you chug from the fountain of Crypto knowledge, but also gathering in
 person, like we're doing here today, and discussing with people face-to-face.
 One of the biggest issues we are trying to solve with our organization is providing
 a means for this community to get together and help each other succeed.
@@ -191,9 +191,9 @@ Face-to-face interaction is one of the most effective means of cementing knowled
 and the ideas you'll generate among this particularly imaginative crowd are just intoxicating.
 
 We have a Slack, which will help everyone stay connected as we go our separate ways today,
-as well a GitHub to colloborate on projects together and create a repository of shared knowledge.
+as well a GitHub to collaborate on projects together and create a repository of shared knowledge.
 
 We also will be running some workshops in the near future,
-which will be more formal oppurtunities for you to get together
+which will be more formal opportunities for you to get together
 and learn exactly how things work in Ethereum,
 so keep an eye out on our Meetup Page for these events.

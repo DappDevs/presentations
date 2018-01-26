@@ -37,7 +37,7 @@ Most software applications work because they are networked
 to other users of the application through what we call *The Internet*.
 
 The Internet, as it exists today, serves these applications to users
-from centralized servers that provide the application developers's code
+from centralized servers that provide the application developer's code
 to the client's browser so they can run the applications they want.
 After they get the application, they also use the server to read and store
 data from the application, so they don't have to worry about storing it themselves.

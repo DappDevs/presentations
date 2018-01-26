@@ -4,7 +4,7 @@
 * "Bitcoin needs a scripting language" - Vitalik Buterin
 * Ethereum Whitepaper (2013)
 * Original team of 4 core developers
-* Public Crowdsale July-August 2014, raising $20m
+* Public Crowd-sale July-August 2014, raising $20m
 * "Olympic" - 1st Public Beta release, May 2015
 * Devcon 1: London, November 2015
 * "Homestead" - 1st Stable release, March 2016
@@ -17,7 +17,7 @@
 
 ???
 
-So, what is Ethereum? First a little backstory...
+So, what is Ethereum? First a little back story...
 
 Ethereum originated from a young Russian-Canadian programmer named Vitalik Buterin.
 Vitalik's father had introduced Buterin to Bitcoin in 2012 at age 17,
@@ -60,10 +60,10 @@ including improvements to transaction processing, gas pricing, and security.
 Following the success of the first public release,
 Ethereum formed a Decentralized Autonomous Organization called The DAO,
 which was a set of smart contracts intended to invest into the burgeoning Ethereum ecosystem.
-It raised a record $150m in it's crowdsale (15% of all Ether),
+It raised a record $150m in it's crowd-sale (15% of all Ether),
 and is often referred to as the first ICO.
 
-Following the success of that crowdsale, hackers hacked the smart contracts used by The DAO
+Following the success of that crowd-sale, hackers hacked the smart contracts used by The DAO
 to steal 3.6m Ether from the newly-founded organization.
 Since the funds were put into a 28-day escrow before they were to be released,
 the Ethereum community came together to discuss what to do about the impending hack.
@@ -71,7 +71,7 @@ the Ethereum community came together to discuss what to do about the impending h
 Ultimately, in a contentious hard-fork off-shooting what is now Ethereum Classic,
 the Ethereum community reversed The DAO Hack and returned all investor funds.
 This is widely credited as the first real test of the Ethereum community,
-a test many consider to have been appropiately handled given the circumstances.
+a test many consider to have been appropriately handled given the circumstances.
 Since the resolution of The DAO hack, the price of Ethereum has been on the rise,
 fueling the growth of the overall platform in the global cryptocurrency community.
 

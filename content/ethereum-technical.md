@@ -19,12 +19,12 @@
 
 ???
 
-Let's dive a little bit into the technicals of Ethereum.
+Let's dive a little bit into the technical of Ethereum.
 
 Ethereum is implemented using two different types of accounts, or addresses.
 
 When you start using Ethereum, you will need an External Account,
-which is a Public/Private keypair provided by your node software or hardware wallet.
+which is a Public/Private key-pair provided by your node software or hardware wallet.
 
 You can have as many External Accounts as you desire.
 External accounts can hold Ether and are (currently) the only way to create and pay for a transaction.
@@ -82,8 +82,8 @@ If the call matches a function definition, it will execute that function with th
 parameters, recording each instruction and how much gas it uses.
 
 If the function contains another function call, this cycle repeats and
-the call will forward to the appropiate contract's function and additional gas will be used.
-When the call completes, the total gas usage is recorded, multipled by the gas price,
+the call will forward to the appropriate contract's function and additional gas will be used.
+When the call completes, the total gas usage is recorded, multiplied by the gas price,
 and the resulting fee is debited from the sender and credited to the miner.
 
 That processed transaction is then committed to the ledger (including a hash of the corresponding

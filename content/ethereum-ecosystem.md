@@ -2,7 +2,7 @@
 
 * Clients (Full and Light)
     * [MetaMask](https://metamask.io/), [Mist/geth](https://github.com/ethereum/mist/releases), [MyEtherWallet](http://myetherwallet.com/), etc.
-* Programming Langauges
+* Programming Languages
     * [Solidity](http://solidity.readthedocs.io/en/develop/), [Vyper](http://vyper.readthedocs.io/en/latest/), [Bamboo](https://github.com/pirapira/bamboo/blob/master/doc/manifest.md)
 * Tools (Web3, IDEs, etc.)
     * [Web3.js](http://web3js.readthedocs.io/en/latest/), [Web3.py](http://web3py.readthedocs.io/en/stable/), [Truffle](http://truffleframework.com/docs/), [Populus](http://populus.readthedocs.io/en/latest/), etc.
@@ -16,15 +16,15 @@ They broadly fall into the following categories.
 
 Client software, aka Nodes, includes any of the many implementations
 that allow you to interact with the blockchain, and create new transactions.
-They typically include means to create and manage Public/Private keypairs,
+They typically include means to create and manage Public/Private key-pairs,
 including importing old accounts and using devices like hardware wallets.
 Some clients can be run in a "light client" configuration,
 which does not verify blocks or other aspects of the protocol that are resource intensive,
 only what is necessary to securely interact with Ethereum in order to use a Dapp.
 
-Ethereum has several programming langauges that allow dapp developers to create and maintain
-EVM bytecode for projects in higher level langauges such as Solidity and Viper.
-These are compiled languages, with specialized functionality for primatives required by Ethereum,
+Ethereum has several programming languages that allow dapp developers to create and maintain
+EVM bytecode for projects in higher level languages such as Solidity and Viper.
+These are compiled languages, with specialized functionality for primitives required by Ethereum,
 such as the parameters for messages, transactions, and blocks.
 This is the bread and butter of the decentralized application developer's toolkit.
 

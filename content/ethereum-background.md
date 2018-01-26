@@ -18,12 +18,12 @@ What makes Ethereum special is that the transactions aren't simply the transfer 
 but the execution of pre-programmed computer logic statements called Smart Contracts,
 which can transfer valuable assets of any type or specification over a common framework.
 
-For those who haven't learned too much about blockchains, a brief decription:
+For those who haven't learned too much about blockchains, a brief description:
 A blockchain stores a series of transactions into blocks,
 where each block is linked to the previous through network consensus rules.
 Any modification of a "link" in the chain would be detectable,
 so all other parties would know a change was made,
-and can handle it appropiately.
+and can handle it appropriately.
 
 Each of these transactions progresses the "state" of Ethereum, moving valuable assets
 between parties by executing smart contracts (which are themselves stored in the "state").
@@ -49,7 +49,7 @@ Ethereum Virtual Machine (EVM) Specs:
 * Memory, 256-bit registers, max governed by gas limit
 * Storage, unlimited ($$$), stored per Smart Contract
 * Block Gas Limit, currently approx 7 million gas
-* Gas price, fluctates based on usage (20 Gwei average)
+* Gas price, fluctuates based on usage (20 Gwei average)
 
 *Check out* [Eth Gas Station](ethgasstation.info) *for transaction pricing information*
 ]
@@ -75,7 +75,7 @@ To solve this, and many other potential attacks, Ethereum introduces the concept
 For every instruction executed in a transaction, "Gas" is charged according the resources
 used, whether it be computing cycles, memory storage, or storage to the global data store.
 The miners decide what they want the "gas price" to be in order to collect fees from processing
-a transaction, this not only prevents the attacks from occuring, but rewards the miners for
+a transaction, this not only prevents the attacks from occurring, but rewards the miners for
 their activity. Every user that sends a transaction is expected to pay a fee to get it accepted,
 and that fee is transferred to the miner regardless of the success of the transaction.
 
@@ -95,7 +95,7 @@ to live in Ethereum, and when to store it elsewhere.
 2. It's a computer
 3. It's really a database
 
-A turing-complete database for the Decentralized Web!
+A Turing-complete database for the Decentralized Web!
 
 <br><br>
 **Most Databases are ACID compliant**
@@ -108,7 +108,7 @@ A turing-complete database for the Decentralized Web!
 
 ???
 
-In my opinion, the best way to think of Ethereum is a really interesting backend database 
+In my opinion, the best way to think of Ethereum is a really interesting back-end database 
 for decentralized applications.
 Like most databases, Ethereum is ACID compliant,
 meaning transactions are Atomic, Consistent, Isolated, and Durable
@@ -125,14 +125,14 @@ that means that every transaction is "consistently" applied and no node will
 disagree on the state.
 
 Each transaction is applied in the order it was received, and since each
-node is synchronized by block, all transactions are applied independantly
+node is synchronized by block, all transactions are applied independently
 and do not affect each other.
 That is not to say that the order of the transactions is not important,
 but that all nodes agree on the order of the transactions and how to apply them.
 
 Lastly, thanks to the durability of the network, if even one of the
 tens of thousands of Ethereum nodes is still up and running, then the network
-is live and doesn't lose data. The uptime of Ethereum is almost 100%!
+is live and doesn't lose data. The up-time of Ethereum is almost 100%!
 
 ---
 
@@ -149,10 +149,10 @@ The biggest innovation is *CryptoEconomics*
 .right-column.width-50[
 We can now (re-)write the Digital Economy!
 * Token Economies - "Own your project"
-* Self-soverign Identity - "Own your identity"
+* Self-sovereign Identity - "Own your identity"
 * Data Ownership - "Own your data" (you get the idea)
-* Business Crowdfunding - "ICOs! Network effects!"
-* Fungible Rewards - "Wait, I can buy and sell skymiles?"
+* Business Crowd-funding - "ICOs! Network effects!"
+* Fungible Rewards - "Wait, I can buy and sell sky miles?"
 * Supporting Open Source Software! - "Heck yes!"
 
 <br><br>
@@ -171,7 +171,7 @@ using a combination of different incentives including fees and the block reward.
 Similarly, decentralized applications need to make use of economic incentives to ensure
 their features are robust against attacks from bad actors in the system.
 
-This might mean having a fee to protect against spam from a botnet,
+This might mean having a fee to protect against spam from a bot-net,
 or adding a staking mechanism to protect against whales having undue influence.
 
 Economics also dictate HOW you code.
@@ -179,5 +179,5 @@ Identifying risk and designing around it is a big part of designing in Ethereum.
 You don't want hold vast amounts of funds in insecure smart contracts,
 at least more than what anyone is willing to lose.
 
-Cryptoecnomics are probably the most exciting outcome of blockchain technology in general.
+CryptoEconomics are probably the most exciting outcome of blockchain technology in general.
 For the first time in history, we can write the rules of the digital economy!

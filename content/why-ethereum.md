@@ -48,7 +48,7 @@ Plus, *Ethereum* just sounds cool!
 
 Even if Ethereum isn't ultimately the blockchain to rule all blockchains,
 the skills and knowledge needed to learn distributed application development
-will be transferrable to whatever competitors come into existance.
+will be transferable to whatever competitors come into existence.
 The major differences between Ethereum and other smart contract frameworks
 are simply the underlying tradeoffs use to secure the blockchain,
 and what programming language you use to write the smart contracts.

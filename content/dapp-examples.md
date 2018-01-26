@@ -23,4 +23,4 @@ Organizations... on the blockchain!
 
 # CryptoKitties
 
-Each Kitty is a unique collectable!
+Each Kitty is a unique collectible!

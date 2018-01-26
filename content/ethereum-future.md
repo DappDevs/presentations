@@ -6,7 +6,8 @@
 
 Some solutions:
 * Sharding - reduce scalabilty issues
-* Proof of Stake - improve transaction finality
+* Plasma - side-chains backed by main chain
+* Casper (PoS) - improve transaction finality
 * Zcash collaboration - enable private transactions
 * Vyper Smart Contract Language - more secure language
 

@@ -33,16 +33,15 @@ which verifies the origin of the given transaction using the the corresponding p
 
 An external account can create a transaction that passes through one or more Smart Contracts.
 Smart Contracts are compiled EVM bytecode stored at a specific location.
-
-They interact with themselves and other accounts based on the code stored at their address.
 You compile EVM Bytecode from a higher level language like Solidity or Viper,
 and deploy that bytecode to a special address that forever assigns it to a new account.
 Once bytecode is saved to a specific smart contract account by the deployment process,
-it is impossible to modify that bytecode in any way other than what the given rules are.
+it is impossible to modify that bytecode, unless the rules specifically allow it.
 
+Smart Contracts interact with themselves and other accounts based on the code stored at their address.
 They also have a datastore which holds the state associated with their address.
-Each smart contract's datastore is generated locally, but a hash of the resulting state of
-every transaction is stored in the blockchain after each set of transactions is applied.
+Each smart contract's datastore is generated locally, but a hash of the resulting state
+is stored in the blockchain after each set of transactions is applied.
 This shows that all states are consistent when processing the chain.
 
 ---
@@ -73,16 +72,16 @@ Then that transaction is signed by the private key associated with the sender's 
 Next, the client provides an amount of gas to pay for the transaction and broadcasts it
 to the entire Ethereum network.
 
-A miner listening on the network will heard this broadcasted transaction and,
-based on the gas price being paid and the gas limit stated for the transaction,
+A miner listening on the network will hear this broadcasted transaction and,
+based on the gas price being paid and the gas limit stated,
 they will begin processing that transaction for inclusion into the block they are mining.
 
-For the first destination of the transaction, the value is transferred and any
-code available at the destination gets executed according the data provided in the transaction.
+For the first destination of the transaction, any Ether is transferred and any
+code available at the destination gets executed according the data provided.
 If the call matches a function definition, it will execute that function with the given
 parameters, recording each instruction and how much gas it uses.
 
-This cycle repeats if the function contains another function call,
+If the function contains another function call, this cycle repeats and
 the call will forward to the appropiate contract's function and additional gas will be used.
 When the call completes, the total gas usage is recorded, multipled by the gas price,
 and the resulting fee is debited from the sender and credited to the miner.

@@ -39,7 +39,7 @@ to other users of the application through what we call *The Internet*.
 The Internet, as it exists today, serves these applications to users
 from centralized servers that provide the application developers's code
 to the client's browser so they can run the applications they want.
-After they get the application, they also use the server to read and save
+After they get the application, they also use the server to read and store
 data from the application, so they don't have to worry about storing it themselves.
 Everyone trusts the server to provide the right code, store the right data,
 and not lose or change the information in a malicious way.
@@ -48,7 +48,7 @@ When we use centralized applications, we accept certain issues with this design.
 For example, if that central authority were to fail or become malicious,
 we risk losing access to our applications and our data.
 We also give this party undue power by having them be custodians of our apps and data.
-This leads to the risks of monopolozation:
+This leads to the risks of exclusive control:
 uncompetitive practices, higher costs, reduced innovation.
 
 On top of that, we also accept performance problems.
@@ -124,7 +124,7 @@ and servers incentivized to serve content via file storage networks like Sia and
 When a client requests an app it doesn't already have the latest version of, it will use this CDN
 and download the code in parallel from many different servers and other clients, like Bittorrent.
 Temporary storage for data like messages and alerts will be provided in a similar manner.
-This will massively improve speed and reliability.
+This will massively improve speed and reliability of dapps over their centralized counterparts.
 
 Of course, blockchains are the major enabling technology for Dapps.
 Not just for sending magic internet money anymore,
@@ -132,7 +132,7 @@ it is really the *backend* of the distributed internet.
 Data like user profiles, application state, and the rules for interacting and manipulating that data
 are all publically available and immutable, enabling dapps to avoid the need to store duplicate data
 on centralized servers that are prone to hacks and data losses and endless user frustrations.
-This will not only enable our dapps to trustless interact with each other,
+This will not only enable our dapps to trustlessly interact with each other,
 but much of the underlying infrastructure will be built on this technology as well.
 
 Every component of the Dapp is open source, auditable,

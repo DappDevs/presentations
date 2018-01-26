@@ -43,7 +43,7 @@ Andreas Antonopoulos
 Here are 5 reasons why I think you should become a DappDev.
 
 First off, this field is exciting. I don't think I need to explain that to you,
-but the general excitement of what we can build with this technology is intoxicating.
+the general excitement of what we can build with this technology speaks for itself.
 
 The main reason why it is exciting is because so many of the potential usecases of the
 tech are just super impactful to our day-to-day lives and have the real potential to
@@ -108,19 +108,20 @@ to form even better ideas. It all starts here.
 The second is that you familarize yourself with some of the concepts underpinning
 the economics of what we are building. Terms like "Futures" and "Prediction Markets",
 or what it means to "Stake" tokens on a particular outcome, these are very important
-design mechanisms in crypto that need to be well-understood to be used effectively.
+design mechanisms in dapps that need to be well-understood to be used effectively.
 
 Next is to become more familar with some software engineering concepts.
 Dapps are all about process. If you don't have a process and follow it, you will lose
 yourself and your clients a whole lot of money.
 Learning how to design a platform architecture for your web app is step one of this process.
 The next step is to generate a series of documentation that breaks down the design requirements
-and assigns a good methodology to test that those requirements are correctly implemented.
+and assigns a good methodology to test those requirements,
+and ensure they are correctly implemented.
 
-If you're like me, hearing the words "Test Driven Development" sort of turn you off.
-But when you're dealing with tens of thousands to millions of people's money,
-there is no margin for error. I think about it like launching a flight test aircraft:
-"you only have one chance to get it right, so give yourself the best chances possible"
+If you're like me, hearing the words "Test Driven Development" sort of turns you off.
+But when you're dealing with tens of thousands to millions of dollars of people's money,
+there is no margin for error. I think about it like flying an experimental aircraft:
+"you only have one chance to get it right, so give yourself the best chance possible"
 
 In aerospace, this means following the V model of software development,
 which we affectionately call the "Swiss Cheese Approach".
@@ -129,7 +130,7 @@ is by adding many layers of different types of verification.
 So even if you make one small error (and we ALL do), you have several other layers backing it up.
 There's no one direct path through the block of swiss cheese.
 
-That's how you build "bullet-proof" code.
+That's how you make code "bullet-proof"!
 
 ---
 
@@ -168,8 +169,8 @@ you conceptualize the very difficult concepts and design patterns that are neede
 build Dapps. Together, we can form a consensus around how to evaluate all of these projects.
 
 I think one of the most important takeaways I would like to share with you today is
-that, given most of these projects are open source projects and built off of many other
-open source tools, you have to become an open source developer yourself. This doesn't
+that, given most of these projects are open source and built off of many other
+open source projects, you have to become an open source developer yourself. This doesn't
 mean complaining when things don't work right, but actually participating and building
 these tools so that they are robust and useful to the larger ecosystem.
 
@@ -177,6 +178,7 @@ It used to be that open source developers either worked for free, or were someho
 amazing enough to be sponsored by large corporations, but with projects like GitCoin
 and Solidified offering bounties for contributing and identifying issues with dapps,
 you can actually earn a fair amount of additional income with your contributions.
+Plus, people really notice when you take initiative.
 It's really a win-win!
 
 Last but most importantly, you have to participate in the community.
@@ -184,13 +186,14 @@ This not only means joining many different online communities and sharing your t
 and learnings as you chug from the fountain of crypto knowledge, but also gathering in
 person, like we're doing here today, and discussing with people face-to-face.
 One of the biggest issues we are trying to solve with our organization is providing
-a means for the community to get together and help each other, and the movement, succeed.
+a means for this community to get together and help each other succeed.
 Face-to-face interaction is one of the most effective means of cementing knowledge,
 and the ideas you'll generate among this particularly imaginative crowd are just intoxicating.
 
-We have a Slack, which will help everyone stay connected as we go our separate ways,
+We have a Slack, which will help everyone stay connected as we go our separate ways today,
 as well a GitHub to colloborate on projects together and create a repository of shared knowledge.
 
 We also will be running some workshops in the near future,
 which will be more formal oppurtunities for you to get together
-and learn exactly how things work, so keep an eye out for these events.
+and learn exactly how things work in Ethereum,
+so keep an eye out on our Meetup Page for these events.

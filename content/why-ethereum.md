@@ -34,7 +34,7 @@ is that it has the greatest chance of success in the long term.
 
 It has the most developer talent,
 the most active, interesting projects,
-the biggest use case of blockchain (which is smart contracts),
+the widest use of smart contracts,
 one of the highest continuous market caps of any cryptocurrency,
 and by far the most optimism for the future (in my opinion).
 
@@ -51,4 +51,4 @@ the skills and knowledge needed to learn distributed application development
 will be transferrable to whatever competitors come into existance.
 The major differences between Ethereum and other smart contract frameworks
 are simply the underlying tradeoffs use to secure the blockchain,
-and what programming language you use to write smart ontracts.
+and what programming language you use to write the smart contracts.

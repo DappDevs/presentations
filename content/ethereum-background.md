@@ -10,7 +10,7 @@
 
 ???
 
-Well, it is a blockchain. (hilarity ensues)
+Well, it is a blockchain. [hilarity ensues]
 
 Ethereum stores transactions on an immutable ledger, basically like any other blockchain.
 
@@ -22,11 +22,12 @@ For those who haven't learned too much about blockchains, a brief decription:
 A blockchain stores a series of transactions into blocks,
 where each block is linked to the previous through network consensus rules.
 Any modification of a "link" in the chain would be detectable,
-so all other parties would know a change was made.
+so all other parties would know a change was made,
+and can handle it appropiately.
 
 Each of these transactions progresses the "state" of Ethereum, moving valuable assets
 between parties by executing smart contracts (which are themselves stored in the "state").
-Since all parties know and trust the rules by which transactions are executed,
+Since all parties know and trust the rules by which smart contracts are executed,
 they can trust that the "state" has been correctly maintained.
 
 Since Ethereum transactions are more than simple transfers of assets in a distributed ledger,
@@ -80,7 +81,7 @@ and that fee is transferred to the miner regardless of the success of the transa
 
 The miners also agree on a gas limit, which is the total amount of gas a transaction can use.
 Exceeding this limit will also fail the transaction, resulting in the miner getting all of
-fees for processing your transaction.
+fees no matter what happens.
 
 Due to these costs, it is only useful to store small programs and limited data "on-chain",
 so a Dapp Developer must be very smart in determining what code and data is important enough
@@ -109,12 +110,12 @@ A turing-complete database for the Decentralized Web!
 
 In my opinion, the best way to think of Ethereum is a really interesting backend database 
 for decentralized applications.
-Like any database (MySQL, PostgreSQL, MSSQL, etc), Ethereum has ACID compliance:
-Atomicity, Consistency, Isolation, Durability
+Like most databases, Ethereum is ACID compliant,
+meaning transactions are Atomic, Consistent, Isolated, and Durable
 
 When a transaction is sent, it is applied atomically.
 In Ethereum, this means if a transaction fails because it runs out of gas
-or encounters an exception, then the transaction is not applied.
+or encounters an exception, then the transaction does not change the overall state.
 All nodes process this transaction together, so the transaction is applied
 "all or nothing" if confirmed by the network.
 
@@ -129,9 +130,9 @@ and do not affect each other.
 That is not to say that the order of the transactions is not important,
 but that all nodes agree on the order of the transactions and how to apply them.
 
-Lastly, thanks to the amazing properties of the network, if even one of the
-tens of thousands of Ethereum nodes are still up and running, then the network
-remains consistent and doesn't lose data. The uptime of Ethereum is almost 100%!
+Lastly, thanks to the durability of the network, if even one of the
+tens of thousands of Ethereum nodes is still up and running, then the network
+is live and doesn't lose data. The uptime of Ethereum is almost 100%!
 
 ---
 
@@ -168,7 +169,7 @@ For example, the consensus and mining processes for adding to the blockchain are
 using a combination of different incentives including fees and the block reward.
 
 Similarly, decentralized applications need to make use of economic incentives to ensure
-their feature-sets are robust against attacks from bad actors in the system.
+their features are robust against attacks from bad actors in the system.
 
 This might mean having a fee to protect against spam from a botnet,
 or adding a staking mechanism to protect against whales having undue influence.

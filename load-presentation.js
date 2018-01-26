@@ -8,7 +8,9 @@ sourceUrls = [
     'content/ethereum-technical.md',
     'content/ethereum-future.md',
     'content/how-to-dappdev.md',
-    'questions.md'
+    'questions.md',
+    '-content/references.md',
+    '-content/ethereum-ecosystem.md',
 ];
 
 var xmlhttp = new XMLHttpRequest();
@@ -16,11 +18,21 @@ var xmlhttp = new XMLHttpRequest();
 var source = document.getElementById("source")
 
 for (var i = 0; i < sourceUrls.length; i++) {
-    xmlhttp.open('GET', sourceUrls[i], false);
+    var sourcefile = sourceUrls[i];
+    var ignore = false;
+    if (sourcefile[0] == '-') {
+        ignore = true;
+        sourcefile = sourcefile.substring(1, sourcefile.length);
+    }
+    xmlhttp.open('GET', sourcefile, false);
     xmlhttp.send();
 
     if (i > 0) source.innerHTML += "---\n"
-    source.innerHTML += "\n" + xmlhttp.responseText;
+    if (ignore) source.innerHTML += 'count: false\n';
+
+    var content = xmlhttp.responseText;
+    if (ignore) content = content.replace('---', '---\ncount: false');
+    source.innerHTML += "\n" + content;
 };
 
 var slideshow = remark.create({

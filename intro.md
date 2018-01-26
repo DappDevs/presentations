@@ -41,14 +41,14 @@ both of which you can find on our website, [dappdevs.org](dappdevs.org).
 # Agenda (1 hour)
 
 .left-column.width-50[
-1. What's a Dapp? (12 mins)
+1. What's a Dapp? (8 mins)
 2. Why Ethereum? (2 mins)
-3. What is Ethereum? (9 mins)
-4. How does Ethereum Work? (9 mins)
-5. What's next for Ethereum? (3 mins)
-6. The Ethereum Ecosystem (9 mins)
-7. More Information (1 min)
-8. Q&A (15 mins)
+3. History of Ethereum (5 mins)
+4. What is Ethereum? (12 mins)
+5. How does Ethereum Work? (6 mins)
+6. What's next for Ethereum? (2 mins)
+7. How to be a DappDev (10 mins)
+8. Q&A
 ]
 
 .left-column.width-50.center[
@@ -70,8 +70,8 @@ Technical Content Creator **@dappdevs**
 Our Agenda for today is to present for 30-45 mins on some background information
 about what a dapp is and how to get started programming one.
 
-Additionally, we will go over the Ethereum framework, the specific tools in the ecosystem,
-as well as some examples of popular Ethereum dapps and what their use cases of Ethereum are.
+Next, we will go over the Ethereum dapp framework, and give a detailed background
+on the technology and how it works.
 
 Lastly, we will sum up a list of resources of where to get started learning more about the
 ecosystem, as well as how to get further involved with DappDevs and what this community means

@@ -135,75 +135,6 @@ remains consistent and doesn't lose data. The uptime of Ethereum is almost 100%!
 
 ---
 
-# Ethereum Accounts
-
-.left-column.width-25[
-**2 Different Account Types**
-
-*External Account*
-* Originate Transactions
-* Can be endpoints 
-
-*Smart Contracts*
-* Activated via External Account
-* Perform stored code
-* Can call more transactions
-]
-
-.right-column.width-75[
-![Transactions](https://cdn-images-1.medium.com/max/1600/1*I635Y9btMh667inOhDBQ_g.png)
-]
-
-???
-
-Ethereum is implemented using two different types of accounts, or addresses.
-
-When you start using Ethereum, you will need an External Account,
-which is a Public/Private keypair provided by your node software or hardware wallet.
-You can have as many External Accounts as you desire.
-External accounts can hold Ether and are (currently) the only way to create and pay for a transaction.
-Each transaction is signed by the private key associated with the external account,
-which verifies the origin of the given transaction using the the public key.
-
-An external account can create a transaction that passes through one or more Smart Contracts.
-Smart Contracts are compiled EVM bytecode stored at a specific location.
-
-They interact with themselves and other accounts based on the code stored at their address.
-You compile EVM Bytecode from a higher level language like Solidity or Viper,
-and deploys that bytecode to a special address that forever assigns it to a new account.
-Once bytecode is saved to a specific smart contract account by the deployment process,
-it is impossible to modify that bytecode, unless operations are provided to allow it to be.
-
-They also have a datastore which holds the state associated with their address.
-Each smart contract's datastore is stored in the state trie, and the merkle root
-of the state trie is stored in the blockchain after each set of transactions is applied.
-This shows that all states are consistent when processing the chain.
-
----
-
-# Anatomy of an Ethereum Transaction
-
-.left-column.width-25[
-**Steps:**
-* Signed by *External Account* (private key)
-* Provides starting gas and gas price
-* Gas is charged for each instruction used
-* The remaining gas is refunded
-* The transaction is mined into a block
-]
-
-.right-column.width-75[
-![EVM](https://cdn-images-1.medium.com/max/800/1*UNCaS12SsPln7DEnRvcONQ.png)
-]
-
-???
-
-A bit more of a detailed walk-through
-
-
-
----
-
 # Economics in Ethereum
 
 .left-column.width-33.center[
@@ -218,24 +149,34 @@ The biggest innovation is *CryptoEconomics*
 We can now (re-)write the Digital Economy!
 * Token Economies - "Own your project"
 * Self-soverign Identity - "Own your identity"
-* Data Ownership - Well, you get the idea ("Own your data lol")
-* Business Crowdfunding - "ICOs!"
+* Data Ownership - "Own your data" (you get the idea)
+* Business Crowdfunding - "ICOs! Network effects!"
 * Fungible Rewards - "Wait, I can buy and sell skymiles?"
-* Supporting Open Source Software! - "Hell yes!"
+* Supporting Open Source Software! - "Heck yes!"
+
+<br><br>
+*Are you excited? I'm excited. I hope I sound excited enough.*
 ]
 
 ???
 
-The real reason why Ethereum works is due to economic incentives.
-The consensus and mining processes for adding to the blockchain are secured
-using a combination of different economic incentives.
-The way transactions are verified, processed and paid for also have to do with economics,
-as the miners have incentives to mine transactions due to the fees they can recoup for doing so.
-Decentralized applications also need to make use of economic incentives to ensure their featuresets
-are not manipulated by a malicious third party, whether it be a botnet with 1000's of Ethereum addresses,
-or a "whale" that has many orders of magnitude more tokens or ether than the average user.
-Economics also dictate HOW you code, as you don't want hold vast amounts of funds in insecure smart contracts,
-at least more than what either party is willing to lose.
+What makes Ethereum really work though is economics, or *CryptoEconomics* as we like to call it.
+CryptoEconomics is the process of designing economic incentives in order to reward good behaviors,
+and punish bad behaviors, on a blockchain network.
 
-The implications of this are probably the most exciting outcome of blockchain technology in general.
-For the first time in history, we can re-write the economic rules of large industries and networks!
+For example, the consensus and mining processes for adding to the blockchain are secured
+using a combination of different incentives including fees and the block reward.
+
+Similarly, decentralized applications need to make use of economic incentives to ensure
+their feature-sets are robust against attacks from bad actors in the system.
+
+This might mean having a fee to protect against spam from a botnet,
+or adding a staking mechanism to protect against whales having undue influence.
+
+Economics also dictate HOW you code.
+Identifying risk and designing around it is a big part of designing in Ethereum.
+You don't want hold vast amounts of funds in insecure smart contracts,
+at least more than what anyone is willing to lose.
+
+Cryptoecnomics are probably the most exciting outcome of blockchain technology in general.
+For the first time in history, we can write the rules of the digital economy!

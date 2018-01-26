@@ -67,20 +67,25 @@ and enjoy what life has to offer.
 
 ---
 
-# DappDev Requirements
+# How do I become a DappDev?
 
 .left-column.width-50[
-* Programming Skills (duh)
-* Understand Core Concepts
-* Crypto-Economics
-* Identify Viable Projects
-* Create Dapp Architecture
-* V Model of Software Dev ->
-* Test-Driven Development
-* Identify and Mitigate Risk
-* Contribute to Open Source!
-
-*A DappDev is truly a jack of all trades!*
+* Learn more about the tech
+    * Cryptographic Hashes
+    * Public/Private Keys
+    * Blockchains
+    * Merkle Trees
+    * Computer Architecture
+    * Programming Language Design
+* Learn more about Economics/CryptoEconomics
+    * Futures
+    * Prediction Markets
+    * Staking
+* Learn more about Software Development
+    * How to architecture a web app
+    * Test-Driven Development
+    * V Model of Software Development ->
+    * Identify and Mitigate Risk
 ]
 
 .right-column.width-50.center[
@@ -91,39 +96,9 @@ and enjoy what life has to offer.
 
 ???
 
+So, you might be asking yourself, "How do I become a DappDev?". Here are the requirements:
 
-
----
-
-# How do I get involved?
-
-.left-column.width-50[
-* Learn more about the tech
-    * Cryptographic Hashes
-    * Public/Private Keys
-    * Blockchains
-    * Merkle Trees
-    * Computer Architecture
-    * Programming Languages
-* Learn more about Economics/CryptoEconomics
-    * Futures
-    * Prediction Markets
-    * Staking
-* Learn more about successful use cases
-    * How to gauge success (hint: forget ICOs)
-    * What makes a good dapp?
-]
-
-.right-column.width-50[
-]
-
-???
-
-We are just one group of people, and we can only do so much by ourselves,
-so we need your involvement to grow and structure our movement.
-Here's how you can help.
-
-The first thing we ask is that you learn a little bit about the tech.
+Besides general programming skills, the first thing is that you learn a little bit about the tech.
 You don't have to be an expert, but like any technology, it pays to
 understand the terms and concepts underpinning what it is you wish to work on.
 You may find yourself intrigued by a particular problem that needs to get solved,
@@ -135,18 +110,35 @@ the economics of what we are building. Terms like "Futures" and "Prediction Mark
 or what it means to "Stake" tokens on a particular outcome, these are very important
 design mechanisms in crypto that need to be well-understood to be used effectively.
 
-Next is we need to understand what particular use cases are a successful use of the
-underlying technology. This serves a double duty. Firstly, you will learn more about
-the ecosystem and what problems are already being solved, or what projects you can
-leverage in unique ways to solve other problems. But more importantly, it will help
-you conceptualize the very difficult concepts and design patterns that are needed to
-build Dapps. Together, we can form a consensus around how to evaluate all of these projects.
+Next is to become more familar with some software engineering concepts.
+Dapps are all about process. If you don't have a process and follow it, you will lose
+yourself and your clients a whole lot of money.
+Learning how to design a platform architecture for your web app is step one of this process.
+The next step is to generate a series of documentation that breaks down the design requirements
+and assigns a good methodology to test that those requirements are correctly implemented.
+
+If you're like me, hearing the words "Test Driven Development" sort of turn you off.
+But when you're dealing with tens of thousands to millions of people's money,
+there is no margin for error. I think about it like launching a flight test aircraft:
+"you only have one chance to get it right, so give yourself the best chances possible"
+
+In aerospace, this means following the V model of software development,
+which we affectionately call the "Swiss Cheese Approach".
+All that means is that the best way to identify and mitigate risk in a software application
+is by adding many layers of different types of verification.
+So even if you make one small error (and we ALL do), you have several other layers backing it up.
+There's no one direct path through the block of swiss cheese.
+
+That's how you build "bullet-proof" code.
 
 ---
 
-# How do I get involved?
+# How do I become a DappDev?
 
 .left-column.width-50[
+* Learn more about successful use cases
+    * How to gauge success (hint: forget ICOs)
+    * What makes a good dapp? No one knows!
 * Contribute to Open Source
     * Tools need help
     * GitCoin - cash4commits on GitHub
@@ -160,15 +152,27 @@ build Dapps. Together, we can form a consensus around how to evaluate all of the
 ]
 
 .right-column.width-50[
+![Jack of all Trades](https://cdn-images-1.medium.com/max/1600/1*hu1UE-Lgda0qOeAYdvrrww.png)
+
+*We're all this doggo sometimes... please ask us for help!*
 ]
 
 ???
+
+A great way to be successful in this ever-changing space is to understand what particular
+use cases are a successful use of the underlying technology.
+This serves a double duty. Firstly, you will learn more about
+the ecosystem and what problems are already being solved, or what projects you can
+leverage in unique ways to solve other problems. But more importantly, it will help
+you conceptualize the very difficult concepts and design patterns that are needed to
+build Dapps. Together, we can form a consensus around how to evaluate all of these projects.
 
 I think one of the most important takeaways I would like to share with you today is
 that, given most of these projects are open source projects and built off of many other
 open source tools, you have to become an open source developer yourself. This doesn't
 mean complaining when things don't work right, but actually participating and building
 these tools so that they are robust and useful to the larger ecosystem.
+
 It used to be that open source developers either worked for free, or were somehow
 amazing enough to be sponsored by large corporations, but with projects like GitCoin
 and Solidified offering bounties for contributing and identifying issues with dapps,

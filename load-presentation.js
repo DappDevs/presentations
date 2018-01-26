@@ -6,7 +6,6 @@ sourceUrls = [
     'content/ethereum-history.md',
     'content/ethereum-background.md',
     'content/ethereum-technical.md',
-    'content/ethereum-ecosystem.md',
     'content/ethereum-future.md',
     'content/how-to-dappdev.md',
     'questions.md'

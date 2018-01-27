@@ -1,7 +1,9 @@
+class: center
+# Questions? Comments? Memes?
 
-background-image: url(https://pbs.twimg.com/profile_images/691969168543981568/wfIPuPDt.jpg)
+![doge](https://pbs.twimg.com/profile_images/691969168543981568/wfIPuPDt.jpg)
 
-## Questions? Comments? Memes?
+*So long, and thanks for all the fish!*
 
 ???
 

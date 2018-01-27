@@ -13,6 +13,7 @@ img { max-width: 100%; }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
 .remark-slide-content { background-size: contain; background-position: bottom; }
 .black-background { background-color: #000; }
+.blue-background { background-color: #142556; }
 .center { text-align: center; }
 .width-25 { width: 25% }
 .width-33 { width: 33% }

@@ -5,6 +5,11 @@ background-position: top;
 ### Intro to Decentralized Applications on Ethereum
 *Presented by DappDevs.org*
 
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+*What's this weird crystal thingy?*
+
 ???
 
 (Chapter Host)

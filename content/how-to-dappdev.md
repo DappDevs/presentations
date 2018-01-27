@@ -1,4 +1,4 @@
-class: center, middle, black-background
+class: center, middle, blue-background
 
 ![DappDevs Logo](https://daks2k3a4ib2z.cloudfront.net/5a3189484a2f7d00019669e1/5a3189f8c821c5000162125b_logo-dappdevs-white.svg)
 

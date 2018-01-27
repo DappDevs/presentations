@@ -1,4 +1,6 @@
+.left-column.width-50[
 # Ethereum 2.0
+
 * Three big problems:
     1. Scalability
     2. Privacy
@@ -10,6 +12,11 @@ Some solutions:
 * Casper (PoS) - improve transaction finality
 * Zcash collaboration - enable private transactions
 * Vyper Smart Contract Language - more secure language
+]
+
+.right-column.width-50[
+![Sharding](https://cdn-images-1.medium.com/max/1600/0*DKWHz0MTjGGP2lpO.)
+]
 
 ???
 

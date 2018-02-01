@@ -12,34 +12,30 @@ background-position: top;
 
 ???
 
-(Chapter Host)
+(Chapter Host) **What is DappDevs?**
 
-**What is DappDevs?**
+*Our focus*:
+* Building an autonomous learning community
+* Members learn and teach each other about decentralized applications
+* Using Ethereum ecosystem
+* Open and friendly environment
 
-Our focus is on building an autonomous learning community that enables
-members to learn and teach each other about building blockchain applications,
-primarily within the Ethereum ecosystem, the most well supported blockchain app framework.
+*Your platform to*:
+* Ask questions
+* Share information
+* Give feedback
 
-We support an open and friendly environment within our community.
-It’s your platform for asking questions, sharing information, and giving feedback.
-Everyone comes with unique experiences, opinions,
-and perspectives that make the community as a whole even more valuable.
-
-Passionate community builders interested in running their own DappDevs community can do
-so as long as they follow the community guidelines.
-We will help them setup their local chapter and provide resources / guidance where we can.
-
-We currently have chapters established in New Haven, Hartford, and Stamford.
+*Community builders: interested in your own DappDevs community?*
+* Follow the community guidelines
+* We help with setup
+* We provide resources and guidance
+* Current chapters: New Haven, Hartford, Stamford
 
 **Next Steps**
-
-As of right now, we’re running this intro series until early March across our 3 chapters.
-We would love your support on getting more people like yourselves to attend.
-If you like what see and hear today, please share!
-
-From there, we will run our first workshop in late March.
-Stay tuned on updates for this event on our Meetup Page and Slack,
-both of which you can find on our website, [dappdevs.org](dappdevs.org).
+* Intro series until early March
+* Please share this group!
+* First workshop in late March.
+* Updates for this event on our Meetup Page and Slack, [dappdevs.org](dappdevs.org).
 
 ---
 
@@ -71,31 +67,21 @@ Technical Content Creator **@dappdevs**
 ???
 
 **Agenda**
-
-Our Agenda for today is to present for 30-45 mins on some background information
-about what a dapp is and how to get started programming one.
-
-Next, we will go over the Ethereum dapp framework, and give a detailed background
-on the technology and how it works.
-
-Lastly, we will tell you what the next steps are in order to become a DappDev,
-as well as how to get further involved with DappDevs and what this community means to us.
-
-After the presentation, our speaker will answer questions for approximately 15-30 mins,
-and then we'll break for networking and casual conversation.
+* 30-45 min presentation
+* What a dapp is
+* Ethereum dapp framework
+* How to become a DappDev
+* Questions 15-30 mins
+* Break for networking/conversation
 
 Please note we have to be out of the space by [time].
 
 [Mention if we are doing something after]
 
 **Our Speaker**
-
-Our speaker today is Bryant Eisenbach, who is lead of technical content at DappDevs,
-as well as an independant Decentralized Application Developer in the Ethereum ecosystem.
-
-He currently is also lead smart contract developer for two Ethereum startups, and has done
-dapp architecture consulting for several clients looking to build business ideas on Ethereum.
-
-He previously was a software developer in the aerospace industry with 6 years of experience
-designing flight control software, and has been active in the Ethereum ecosystem contributing
-to their open source projects since early 2017.
+*Bryant Eisenbach*:
+* Lead of technical content at DappDevs,
+* Ethereum decentralized application developer
+* Dapp architecture consulting
+* 6+ years Aerospace Flight Controls Software developer
+* Active in the Ethereum ecosystem, contributer to Vyper SC lang

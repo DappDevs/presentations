@@ -84,4 +84,4 @@ Please note we have to be out of the space by [time].
 * Ethereum decentralized application developer
 * Dapp architecture consulting
 * 6+ years Aerospace Flight Controls Software developer
-* Active in the Ethereum ecosystem, contributer to Vyper SC lang
+* Active in the Ethereum ecosystem, contributer to Vyper Smart Ccontract language

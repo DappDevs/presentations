@@ -31,6 +31,24 @@ A Dapp is a *Decentralized Application*
 
 ???
 
+*Decentralized* is a new term...
+
+*Software Application* is not
+* Most work via the Internet
+* Most are served from centralized servers
+
+We trust *Centralized Applications* to:
+* Use correct code
+* Store data safely
+* Not have malicious or lazy developers
+
+*Centralized Applications* lead to:
+* Monopolies: uncompetitive, higher costs, reduced innovation
+* Performance issues: inability to scale (AWS), reduced bandwidth
+* Loss of user control
+
++++
+
 *Decentralized* might be an unfamiliar term for some,
 but everyone here knows what a software application is.
 Most software applications work because they are networked
@@ -81,6 +99,19 @@ reduces speeds, taking more bandwidth to accomplish a simple task.
 
 ???
 
+*How do we make non-centralized apps?*
+
+*We have the tools!*
+* Smartphones - better than 90's super computers
+* Client-side frameworks
+* Content Delivery Networks
+* Great UX/UI
+* Blockchains and Smart Contracts
+
+*State of the art technology* - just have to combine!
+
++++
+
 So, if centralization is bad, how do we create apps that aren't centralized?
 
 We already have most of the technology required to build a decentralized app.
@@ -103,6 +134,32 @@ and now that we finally have them all, we can start building decentralized appli
 ![Dapp](https://blog.ethereum.org/wp-content/uploads/2016/07/Screen-Shot-2016-07-08-at-5.37.32-PM.png)
 
 ???
+
+*Dapp Architecture*
+
+User Devices:
+* Render UI
+* Contant cryptographic keypairs, or *accounts*
+* Manage application code access
+
+Content Delivery Networks:
+* Will become publicly accessible
+* Will become commoditized
+* Developers have special keys to write their applications
+* Leverage other code, reducing code duplication
+* Distributed content via bittorrent from both clients and servers
+
+Blockchains:
+* Trustful storage of important data and business logic
+* "Know what the rules are" in an app
+* Enables other infrastructure
+* "Backed" of the distributed internet
+
+Every component is public, open-source, auditable, and tamper-resistant.
+
+Reduces hacks and unauthorized uses of your valuable data.
+
++++
 
 So what is a decentralized application *technically*?
 

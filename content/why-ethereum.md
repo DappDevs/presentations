@@ -29,6 +29,30 @@ and we'll tell you why!
 
 ???
 
+Ethereum has the greatest chance for success
+
+Stats:
+* Most Active Developers
+* Most Interesting Projects
+* The most innovative smart contracts
+* One of the highest continuous market caps
+* The most optimism in it's future
+
+Ethereum Foundation:
+* Active in all aspects of dapp framework
+* Extensive research in scalability, privacy, and security
+* Major enterprise partners
+* One of the brightest minds in crypto
+
+Plus, *Ethereum* just sounds cool!
+
+What if we're wrong?
+* Skills and Knowledge transfer to competitors
+* Only differences are underlying tradeoffs and programming language
+* Develop discipline in development transferrable to other fields
+
++++
+
 Our primary reason we believe Ethereum is the best framework to develop with
 is that it has the greatest chance of success in the long term.
 

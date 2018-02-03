@@ -20,6 +20,24 @@ Some solutions:
 
 ???
 
+Ethereum issues:
+* Scalability
+    * Sharding
+    * Plasma
+    * Casper (PoS) enables both solutions
+* Privacy
+    * Z-cash collab
+    * Protect vulnerable populations
+    * Tricky balance -- transparency vs. privacy
+* Smart Contract Security
+    * $1b lost (at $1k Ether)
+    * Vyper -- Python, more secure by design
+    * Solidity was great, but has major flaws
+    * Tools needed in the ecosystem to help support
+    * Formal Verification
+
++++
+
 The future of Ethereum is very bright, but there are some problem areas that are in work.
 
 Currently, the Ethereum network has a theoretical limit of 15 transactions/sec,

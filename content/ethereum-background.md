@@ -12,6 +12,25 @@
 
 Well, it is a blockchain. [hilarity ensues]
 
+Ethereum keeps all transactions on a public, immutable ledger
+
+Ethereum transactions execute data instead of transfer ownership of a coin
+
+*A Blockchain is:*
+* Transactions into blocks
+* Newest block linked to one before it
+* All parties come to consensus on linking
+* If a link is modified, all parties know it
+
+Transactions change Ethereum's "state"
+
+All parties know the rules in smart contracts,
+and new smart contracts are also known to all parties.
+
+Ethereum is more than a blockchain
+
++++
+
 Ethereum stores transactions on an immutable ledger, basically like any other blockchain.
 
 What makes Ethereum special is that the transactions aren't simply the transfer of a coin,
@@ -55,6 +74,30 @@ Ethereum Virtual Machine (EVM) Specs:
 ]
 
 ???
+
+Ethereum is a world-computer
+
+Every transaction is processed by EVM, Ethereum's computer
+
+EVM runs on every node concurrently, part of consensus protocol
+
+EVM is a Turing Machine, suffers Halting Problem
+
+Solution is Gas:
+* Each instruction costs gas to execute
+* A transaction has a limit on computation -- gas limit
+* Gas remaining is refunded
+* If all gas used up, transaction fails
+* Fee is gas used times gas price, and given to the miner
+* Failed transaction still pays fee
+
+Miners choose block gas limit, amount of gas used by all transactions in block
+
+High cost, only store important data and smart contracts
+
+Be smart!
+
++++
 
 You could also think of Ethereum as a computer that is shared by the world.
 
@@ -108,6 +151,21 @@ A Turing-complete database for the Decentralized Web!
 
 ???
 
+Ethereum is the backend database of the decentralized web
+
+Ethereum is ACID compliant:
+* Applied atomically -- "all or nothing"
+    * If it fails, it fails everywhere
+    * No state modifications
+* Consistently applied -- everyone agrees on rules
+    * Smart contracts modify rules consistently
+* Transactions are isolated -- no txn dependancies
+    * Order is important...
+* Durable, thanks to the blockchain! -- massively redundant
+    * Uptime is 100%!
+
++++
+
 In my opinion, the best way to think of Ethereum is a really interesting back-end database 
 for decentralized applications.
 Like most databases, Ethereum is ACID compliant,
@@ -160,6 +218,32 @@ We can now (re-)write the Digital Economy!
 ]
 
 ???
+
+It really works because of Economics (*Cryptoeconomics*)
+
+*Cryptoeconomics*:
+Designing economic mechanisms to control user behavior without explicit rules
+
+Ethereum uses Cryptoeconomics:
+* Mining incentives -- block reward + fees
+* Gas limit
+
+Dapps need Cryptoeconomics:
+* Protect against abusive behavior
+* Reward good behavior
+* Bots -- Sybil attack (many acconuts, 1 owner)
+* Whales -- undue influence of economically advantaged individuals
+
+Economics drives programming dapps:
+* Non-optimal designs are costly
+* Mistakes are costly
+* Users won't tolerate many mistakes, so reduce risk of hack
+
+Cryptoeconomics is the most important outcome of blockchain tech
+
+We control the rules of the digital economy!
+
++++
 
 What makes Ethereum really work though is economics, or *CryptoEconomics* as we like to call it.
 CryptoEconomics is the process of designing economic incentives in order to reward good behaviors,

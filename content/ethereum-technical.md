@@ -19,6 +19,26 @@
 
 ???
 
+Ethereum has two different accounts:
+* External accounts
+* Smart contracts
+
+External Accounts:
+* Public/Private key-pair
+* Interacts with outside world
+* Starts transactions
+* Holds ether and pays for gas
+* Think of as users
+
+Smart Contracts:
+* Created by special transaction
+* Compiled code stored immutably
+* Contains rules and data
+* Can call other contracts
+* Can't be changed, only deleted (optional)
+
++++
+
 Let's dive a little bit into the technical of Ethereum.
 
 Ethereum is implemented using two different types of accounts, or addresses.
@@ -62,6 +82,25 @@ This shows that all states are consistent when processing the chain.
 ]
 
 ???
+
+Transaction process
+* Generate call data (function sig + arguments)
+* Specify receiver, gas limit and price
+* Sign call with external account (Private key)
+* Broadcast to the network
+* Miner executes transaction
+* Ether is moved and/or functions are executed
+* Each instruction in function incurs gas cost
+* Calls continue until complete
+* Gas is totalled, multiplied by price
+* Fee is deducted
+* State is computed and put into block
+* Transaction is put into block
+* Miner mines block when it solves PoW puzzle
+
+Transaction is confirmed on the blockchain!
+
++++
 
 A bit more of a detailed walk-through of how a transaction works.
 

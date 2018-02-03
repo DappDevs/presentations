@@ -40,6 +40,15 @@ Andreas Antonopoulos
 
 ???
 
+Why:
+* Exciting -- lots of ideas, so much interest
+* Impactful -- many ideas can positively impact us
+* Challenging -- always learning and growing, stay humble
+* Lucrative -- even if the crypto bubble pops, you will be valuable
+* Flexible -- ability to work part-time, passive income with tokens
+
++++
+
 Here are 5 reasons why I think you should become a DappDev.
 
 First off, this field is exciting. I don't think I need to explain that to you,
@@ -95,6 +104,25 @@ and enjoy what life has to offer.
 ]
 
 ???
+
+Requirements:
+* General programming and tech background
+    * May find a particular focus of interest
+* Understand economics better
+    * You're designing economies, not just apps
+* Software Engineering
+    * V integration model
+    * Understand requirements and limitations
+* Test-Driven Development
+    * No margin for error, lose customer $$$
+    * One chance to get it right "give yourself the best chance possible"
+* "Swiss cheese approach"
+    * Many different layers of testing and testers
+    * No one hole goes through the block of cheese
+
+Make bullet-proof code!
+
++++
 
 So, you might be asking yourself, "How do I become a DappDev?". Here are the requirements:
 
@@ -159,6 +187,27 @@ That's how you make code "bullet-proof"!
 ]
 
 ???
+
+* Understand use cases
+    * Know what's being worked on
+    * Conceptualize what makes dapps different/successful
+* Support open source!
+    * Open source tech is critical to success of blockchain
+    * Contributing is a "tide that raises all boats"
+    * GitCoin -- get tips to contribute
+    * Solidified -- audit smart contracts
+    * Many others...
+* Participate in a community
+    * Learn and teach others
+    * Face-to-face is fastest way to learn
+    * Develop mastery
+    * Help each other succeed!
+
+We have a slack and a github for our community to colloborate with.
+
+Please join us for hands-on workshops in the future!
+
++++
 
 A great way to be successful in this ever-changing space is to understand what particular
 use cases are a successful use of the underlying technology.

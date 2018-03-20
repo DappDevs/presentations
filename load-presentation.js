@@ -67,6 +67,10 @@ for (var i = 0; i < sourceUrls.length; i++) {
     if (ignore) source.innerHTML += 'count: false\n';
 
     var content = xmlhttp.responseText;
+    // Do the replaces
+    content = content.replace('{{ title }}', urlParams.title);
+    content = content.replace('{{ author }}', urlParams.author);
+
     if (ignore) content = content.replace('---', '---\ncount: false');
     source.innerHTML += "\n" + content;
 };

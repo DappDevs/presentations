@@ -7,6 +7,8 @@ function getJsonFromUrl(hashBased) {
   } else {
     query = location.search.substr(1);
   }
+  var pos = query.indexOf("#");
+  if (pos > 0) query = query.substring(0, pos);
   var result = {};
   query.split("&").forEach(function(part) {
     if(!part) return;

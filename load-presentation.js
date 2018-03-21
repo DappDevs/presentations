@@ -30,8 +30,23 @@ function getJsonFromUrl(hashBased) {
   return result;
 }
 
+function toUpper(str) {
+return str
+    .toLowerCase()
+    .split(' ')
+    .map(function(word) {
+        return word.charAt(0).toUpperCase() + word.substr(1);
+    })
+    .join(' ');
+}
+
+function kebabCaseToTitle(kebabCase) {
+    // Needs to replace twice, one letter words screw this up
+    return toUpper(kebabCase.replace("-"," ").replace("-"," "));
+}
+
 const urlParams = getJsonFromUrl(window.location.href);
-var sourceUrls = ['intro.md'];
+var sourceUrls = ['intro.md', 'agenda.md'];
 var questionsAdded = false;
 const contentLocation = 'content/'
 
@@ -56,6 +71,17 @@ var xmlhttp = new XMLHttpRequest();
 
 var source = document.getElementById("source");
 
+const agenda = urlParams.content
+    .filter(function(file) {
+        // Ignore files that start with '-', these are extra files
+        return file.charAt(0) != '-';
+    })
+    .map(function(file) {
+        // Turn this into a markdown blleted list
+        return "* "+kebabCaseToTitle(file.replace(".md",""))
+    })
+    .join('\n');
+
 for (var i = 0; i < sourceUrls.length; i++) {
     var sourcefile = sourceUrls[i];
     var ignore = false;
@@ -73,6 +99,7 @@ for (var i = 0; i < sourceUrls.length; i++) {
     // Do the replaces
     content = content.replace('{{ title }}', urlParams.title);
     content = content.replace('{{ author }}', urlParams.author);
+    content = content.replace('{{ agenda }}', agenda);
 
     if (ignore) content = content.replace('---', '---\ncount: false');
     source.innerHTML += "\n" + content;

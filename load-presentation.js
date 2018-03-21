@@ -33,7 +33,7 @@ function getJsonFromUrl(hashBased) {
 const urlParams = getJsonFromUrl(window.location.href);
 var sourceUrls = ['intro.md'];
 var questionsAdded = false;
-const contentLocation = 'https://raw.githubusercontent.com/DappDevs/content/master/'
+const contentLocation = 'content/'
 
 if (urlParams.content) {
     for (var i = 0; i < urlParams.content.length; i++) {

@@ -10,6 +10,7 @@ h1, h2, h3 {
 }
 img { max-width: 100%; }
 .white { color: #FFFFFF;}
+.magenta { color: #FF00FF;}
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12pt; }
 .remark-slide-content { background-size: contain; background-position: bottom; }
 .black-background { background-color: #000; }

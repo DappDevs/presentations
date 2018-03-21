@@ -33,6 +33,7 @@ function getJsonFromUrl(hashBased) {
 const urlParams = getJsonFromUrl(window.location.href);
 var sourceUrls = ['intro.md'];
 var questionsAdded = false;
+const contentLocation = 'https://raw.githubusercontent.com/DappDevs/content/master/'
 
 if (urlParams.content) {
     for (var i = 0; i < urlParams.content.length; i++) {
@@ -41,10 +42,10 @@ if (urlParams.content) {
             sourceUrls.push('questions.md');
         }
         if (urlParams.content[i][0] == '-') {
-            sourceUrls.push('-content/'+urlParams.content[i]
+            sourceUrls.push('-'+contentLocation+urlParams.content[i]
                 .substring(1, urlParams.content[i].length));
         } else {
-            sourceUrls.push('content/'+urlParams.content[i]);
+            sourceUrls.push(contentLocation+urlParams.content[i]);
         }
     }
 }

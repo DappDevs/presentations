@@ -69,7 +69,7 @@ if (!questionsAdded) sourceUrls.push('questions.md');
 
 var xmlhttp = new XMLHttpRequest();
 
-var source = document.getElementById("source");
+var source = '';
 
 const agenda = urlParams.content
     .filter(function(file) {
@@ -92,8 +92,8 @@ for (var i = 0; i < sourceUrls.length; i++) {
     xmlhttp.open('GET', sourcefile, false);
     xmlhttp.send();
 
-    if (i > 0) source.innerHTML += "---\n"
-    if (ignore) source.innerHTML += 'count: false\n';
+    if (i > 0) source += "---\n"
+    if (ignore) source += 'count: false\n';
 
     var content = xmlhttp.responseText;
     // Do the replaces
@@ -102,10 +102,11 @@ for (var i = 0; i < sourceUrls.length; i++) {
     content = content.replace('{{ agenda }}', agenda);
 
     if (ignore) content = content.replace('---', '---\ncount: false');
-    source.innerHTML += "\n" + content;
+    source += "\n" + content;
 };
 
 var slideshow = remark.create({
+    source: source,
     ratio: '16:9',
     navigation: {
         scroll: false,

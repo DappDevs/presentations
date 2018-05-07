@@ -46,7 +46,7 @@ function kebabCaseToTitle(kebabCase) {
 }
 
 const urlParams = getJsonFromUrl(window.location.href);
-var sourceUrls = ['intro.md', 'agenda.md'];
+var sourceUrls = ['intro.md'];
 var questionsAdded = false;
 const contentLocation = 'content/'
 
